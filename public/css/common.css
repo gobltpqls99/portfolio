@@ -1,0 +1,27 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header .wrapper {
+  width: 100%;
+  background-color: #222;
+}
+
+header .wrapper .navi-wrapper {
+  width: 5%;
+  height: 100vh;
+  background-color: #1d1d1d;
+  padding-top: 20%;
+}
+
+header .wrapper .navi-wrapper .menu {
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+header .wrapper .navi-wrapper .menu a {
+  font-size: 1.5em;
+  color: #dedede;
+}
