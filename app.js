@@ -16,5 +16,8 @@ app.locals.pretty = true;
 
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.get('/home', (res, req) => {
-	req.render('home/main')
-})
+	req.render('home/home')
+});
+app.get('/skills', (res, req) => {
+	req.render('skills/skills')
+});
