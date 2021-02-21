@@ -13,9 +13,10 @@ a {
 
 header{
   .wrapper {
+    background-color: #1d1d1d;
     .navi-wrapper {
       width: 70px; height: 100vh;
-      background-color: #1d1d1d;
+      background-color: #111;
       position: relative;
       .navi {
         position: absolute;
@@ -27,7 +28,21 @@ header{
           a{
             font-size: 1.7em;
             color: #dedede;
+            // position: relative;
+            // .p {
+            //   color: #1d1d1d;
+            //   background-color: #666666;
+            //   position: absolute;
+            //   top: 0; left: 2.5em;
+            //   opacity: 1;
+            //   font-size: 0.8em;
+            // }
           }
+          // a:hover {
+          //   .p {
+          //     opacity: 1;
+          //   }
+          // }
         }
       }
     }

@@ -39,7 +39,7 @@
 	}
 }
 @mixin mobileS {
-	@media screen and (max-width: 483px) {
+	@media screen and (max-width: 500px) {
 		@content;
 	}
 }

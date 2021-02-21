@@ -21,3 +21,9 @@ app.get('/home', (res, req) => {
 app.get('/skills', (res, req) => {
 	req.render('skills/skills')
 });
+app.get('/projects', (res, req) => {
+	req.render('projects/projects')
+});
+app.get('/contact', (res, req) => {
+	req.render('contact/contact')
+});

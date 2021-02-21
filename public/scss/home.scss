@@ -20,6 +20,13 @@
 					left: -4%;
 				}
 			}
+			.line {
+				width: 90%; height: 0.02em; background-color: #4af1f1; position: absolute; left: 75.2%; top: 43%;
+				@include mobile {
+					width: 0.5em; height: 1.9em;
+					left: -4%;
+				}
+			}
 			.p {
 				padding-right: 0.5em;
 			}
@@ -34,7 +41,7 @@
 			}
 			.title {
 				display: flex; align-items: baseline;
-				font-size: 1.7em;
+				font-size: 1.5em;
 				padding-left: 1em;
 				.p2 {
 					color: #4af1f1;
@@ -56,6 +63,7 @@
 					font-size: 1.5em;
 				}
 				.p4 {
+					font-size: 0.9em;
 					@include mobile {
 					max-width: 100%;
 					font-size: 1em;
