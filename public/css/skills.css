@@ -1,15 +1,136 @@
 .title-wrapper {
   position: absolute;
-  top: 8%;
-  left: 12%;
+  top: 12%;
+  left: 15%;
   color: #dedede;
   font-size: 4.5em;
   display: flex;
   align-items: baseline;
+  font-family: "Source Sans Pro", sans-serif;
 }
-.title-wrapper div.color {
+
+.title-wrapper .color {
   width: 0.5em;
   height: 0.1em;
   background-color: #4af1f1;
   margin-right: 0.1em;
+}
+
+.box-wrapper {
+  position: absolute;
+  top: 40%;
+  left: 53%;
+  transform: translate(-40%, -53%);
+  color: #dedede;
+  font-size: 1.5em;
+}
+
+.box-wrapper img {
+  width: 70px;
+  height: 70px;
+}
+
+.box-wrapper .frameworks {
+  text-align: center;
+  width: 450px;
+  height: 380px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid #dedede;
+  padding-top: 2em;
+  position: relative;
+}
+
+.box-wrapper .frameworks .tape {
+  position: absolute;
+  top: -13%;
+  left: 48%;
+  transform: translateX(-48%);
+}
+
+.box-wrapper .frameworks .line {
+  width: 2.3em;
+  height: 0.02em;
+  opacity: .5;
+  background-color: #dedede;
+  position: absolute;
+  top: 80%;
+  left: -12.55%;
+}
+
+.box-wrapper .frontend {
+  text-align: center;
+  width: 350px;
+  height: 280px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid #dedede;
+  padding-top: 1em;
+  position: absolute;
+  left: -90%;
+  top: 60%;
+}
+
+.box-wrapper .backend {
+  text-align: center;
+  width: 250px;
+  height: 230px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid #dedede;
+  padding-top: 1em;
+  position: absolute;
+  right: -70%;
+  top: 27%;
+}
+
+.box-wrapper .backend .line {
+  width: 2.75em;
+  height: 0.02em;
+  opacity: .5;
+  background-color: #dedede;
+  position: absolute;
+  top: 10%;
+  left: -27%;
+}
+
+.box-wrapper .tools {
+  text-align: center;
+  width: 250px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid #dedede;
+  padding-top: 1em;
+  position: absolute;
+  left: 80%;
+  bottom: -60%;
+}
+
+.box-wrapper .tools .line {
+  width: 0.02em;
+  height: 1.2em;
+  opacity: .5;
+  background-color: #dedede;
+  position: absolute;
+  top: -15%;
+  left: 7%;
+}
+
+.box-wrapper .design {
+  text-align: center;
+  width: 280px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid #dedede;
+  padding-top: 1em;
+  position: absolute;
+  right: 30%;
+  bottom: -80%;
+}
+
+.box-wrapper .design .line {
+  width: 1.85em;
+  height: 0.05em;
+  opacity: .5;
+  background-color: #dedede;
+  position: absolute;
+  top: 40%;
+  right: -17%;
 }

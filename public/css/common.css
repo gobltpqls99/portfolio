@@ -1,35 +1,39 @@
-html, body {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap");
 a {
   text-decoration: none;
   color: inherit;
 }
 
-header .wrapper {
+header .h-wrapper {
   background-color: #1d1d1d;
+  background: url(../img/p3-2.jpg) no-repeat center center fixed;
 }
-header .wrapper .navi-wrapper {
+
+header .h-wrapper .navi-wrapper {
   width: 70px;
   height: 100vh;
   background-color: #111;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.4);
   position: relative;
 }
-header .wrapper .navi-wrapper .navi {
+
+header .h-wrapper .navi-wrapper .navi {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-header .wrapper .navi-wrapper .navi .menu {
+
+header .h-wrapper .navi-wrapper .navi .menu {
   width: 100%;
   height: 50px;
   text-align: center;
 }
-header .wrapper .navi-wrapper .navi .menu a {
+
+header .h-wrapper .navi-wrapper .navi .menu a {
   font-size: 1.7em;
   color: #dedede;
 }

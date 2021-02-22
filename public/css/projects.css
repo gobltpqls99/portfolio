@@ -1,15 +1,49 @@
-.title-wrapper {
+.container {
+  height: 1208px;
+}
+
+.container .title-wrapper {
   position: absolute;
-  top: 8%;
-  left: 12%;
+  top: 12%;
+  left: 15%;
   color: #dedede;
   font-size: 4.5em;
   display: flex;
   align-items: baseline;
+  font-family: "Source Sans Pro", sans-serif;
 }
-.title-wrapper div.color {
+
+.container .title-wrapper .color {
   width: 0.5em;
   height: 0.1em;
   background-color: #4af1f1;
   margin-right: 0.1em;
+}
+
+.container .line {
+  width: 0.02em;
+  height: 80%;
+  background-color: #4af1f1;
+  position: absolute;
+  top: 25.5%;
+  left: 22.3%;
+}
+
+.container .line .dot {
+  color: #dedede;
+}
+
+.container .line .dot .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  font-family: "Nanum Gothic Coding", monospace;
+  padding-left: 1em;
+}
+
+.container .line .dot .box {
+  width: 300px;
+  height: 200px;
+  background-color: #dedede;
 }

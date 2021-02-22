@@ -1,4 +1,4 @@
-
+@import './variables';
 
 @mixin desktopL {
 	@media screen and (max-width: 1700px) {
@@ -32,14 +32,19 @@
 		@content;
 	}
 }
+@mixin tablet {
+	@media screen and (max-width: 680px) {
+		@content;
+	}
+}
 
 @mixin mobile {
-	@media screen and (max-width: 623px) {
+	@media screen and (max-width: 615px) {
 		@content;
 	}
 }
 @mixin mobileS {
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 515px) {
 		@content;
 	}
 }
