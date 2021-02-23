@@ -1,7 +1,8 @@
 @import './mixin';
 
+
 .container {
-	height: 1208px;
+	overflow: visible;
 	.title-wrapper {
 		position: absolute;
 		top: 12%; left: 15%;
@@ -21,14 +22,31 @@
 		position: absolute; top: 25.5%; left: 22.3%;
 		.dot {
 			color: #dedede;
-			.title {
-				display: flex; align-items: center; justify-content: space-between;
-				width: 200px; font-family: $d2;
-				padding-left: 1em;
-			}
+			width: 10px; height: 10px; border-radius: 50%;
+			background-color: #4af1f1;
+			position: absolute; top: 20%; left: -0.24em;
+		}
+	}
+	.html-wrapper {
+		.html {
+			color: #dedede;
+			
+			padding-left: 2em; margin-top: 3em;
+			font-size: 1.2em;
+			display: flex; align-items: center; justify-content: space-between;
+			width: 300px; font-family: $d2;
+		}
+		.box-wrapper{
+			position: absolute; top: 6em; left: 18em;
+			display: flex;
 			.box {
-				width: 300px; height: 200px; background-color: #dedede;
+				width: 300px; height: 200px; background-color: #dedede; margin-right: 1.5em;
 			}
 		}
+	}
+}
+@include original {
+	body {
+		overflow-y: auto;
 	}
 }

@@ -1,5 +1,5 @@
 .container {
-  height: 1208px;
+  overflow: visible;
 }
 
 .container .title-wrapper {
@@ -31,19 +31,43 @@
 
 .container .line .dot {
   color: #dedede;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4af1f1;
+  position: absolute;
+  top: 20%;
+  left: -0.24em;
 }
 
-.container .line .dot .title {
+.container .html-wrapper .html {
+  color: #dedede;
+  padding-left: 2em;
+  margin-top: 3em;
+  font-size: 1.2em;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 200px;
+  width: 300px;
   font-family: "Nanum Gothic Coding", monospace;
-  padding-left: 1em;
 }
 
-.container .line .dot .box {
+.container .html-wrapper .box-wrapper {
+  position: absolute;
+  top: 6em;
+  left: 18em;
+  display: flex;
+}
+
+.container .html-wrapper .box-wrapper .box {
   width: 300px;
   height: 200px;
   background-color: #dedede;
+  margin-right: 1.5em;
+}
+
+@media screen and (max-width: 2000px) {
+  body {
+    overflow-y: auto;
+  }
 }

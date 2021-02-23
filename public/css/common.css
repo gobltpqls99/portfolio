@@ -13,6 +13,7 @@ header .h-wrapper {
 }
 
 header .h-wrapper .navi-wrapper {
+  z-index: 9999;
   width: 70px;
   height: 100vh;
   background-color: #111;

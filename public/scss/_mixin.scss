@@ -1,5 +1,10 @@
 @import './variables';
 
+@mixin original {
+	@media screen and (max-width: 2000px) {
+		@content;
+	}
+}
 @mixin desktopL {
 	@media screen and (max-width: 1700px) {
 		@content;
