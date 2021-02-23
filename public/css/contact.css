@@ -1,0 +1,192 @@
+.title-wrapper {
+  position: absolute;
+  top: 12%;
+  left: 15%;
+  color: #dedede;
+  font-size: 4.5em;
+  display: flex;
+  align-items: baseline;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.title-wrapper .color {
+  width: 0.5em;
+  height: 0.1em;
+  background-color: #4bf1f1;
+  margin-right: 0.1em;
+}
+
+.text-wrapper {
+  width: 100%;
+  color: #dedede;
+  font-family: "Noto Sans KR", sans-serif;
+  position: absolute;
+  top: 33%;
+  left: 15%;
+  font-size: 1.2em;
+}
+
+.text-wrapper .text-wrap {
+  position: relative;
+}
+
+.text-wrapper .text-wrap .hello {
+  margin-top: 1.3em;
+}
+
+.text-wrapper .text-wrap .text {
+  display: flex;
+  justify-content: baseline;
+}
+
+.text-wrapper .text-wrap .text .hello {
+  margin-top: 1.3em;
+  padding-right: 0.5em;
+}
+
+.text-wrapper .text-wrap .text .he4 {
+  position: relative;
+}
+
+.text-wrapper .text-wrap .text .he4 .pen {
+  width: 58px;
+  height: 15px;
+  background-color: #4bf1f14f;
+  position: absolute;
+  top: 27%;
+  left: -2.6%;
+  transform: translate(0, 27%);
+}
+
+.text-wrapper .line {
+  width: 100%;
+  height: 0.02em;
+  background-color: #4bf1f1;
+  position: absolute;
+  left: 27%;
+  top: 72.5%;
+}
+
+.text-wrapper .container {
+  position: absolute;
+  right: -10%;
+  top: 85%;
+  font-size: 1.2em;
+  font-family: "Nanum Gothic Coding", monospace;
+}
+
+.text-wrapper .container .contact-wrapper {
+  display: flex;
+  align-items: baseline;
+  font-size: 1.5em;
+}
+
+.text-wrapper .container .contact-wrapper h1 {
+  padding: 1.3em 0;
+  padding-left: 1.5em;
+  padding-right: 0.5em;
+}
+
+.text-wrapper .container .contact-line {
+  width: 200px;
+  height: 23px;
+  background-color: #4bf1f14f;
+  position: absolute;
+  top: 36%;
+  left: 4.7%;
+}
+
+.text-wrapper .container .p {
+  padding: 0.5em 2em;
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 1700px) {
+  .text-wrapper .line {
+    left: 34%;
+  }
+  .text-wrapper .container {
+    right: -25%;
+  }
+}
+
+@media screen and (max-width: 1580px) {
+  .text-wrapper .line {
+    left: 37%;
+  }
+  .text-wrapper .container {
+    right: -28%;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .text-wrapper .line {
+    left: 42%;
+  }
+  .text-wrapper .container {
+    right: -38%;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .text-wrapper .line {
+    left: -10%;
+    top: 12em;
+  }
+  .text-wrapper .container {
+    right: -40%;
+    top: 12em;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .text-wrapper .container {
+    right: -35%;
+  }
+  .text-wrapper .container .contact-line {
+    left: 5.5%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .text-wrapper .container {
+    right: -18%;
+  }
+  .text-wrapper .container .contact-line {
+    left: 7.2%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .text-wrapper .container {
+    right: 3%;
+  }
+  .text-wrapper .container .contact-line {
+    left: 9%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .text-wrapper {
+    font-size: 1em;
+  }
+  .text-wrapper .text-wrapper .text-wrap .text .he4 .pen {
+    max-width: 48px;
+  }
+  .text-wrapper .container .contact-line {
+    width: 150px;
+    left: 9.5%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .text-wrapper {
+    font-size: 0.75em;
+  }
+  .text-wrapper .container .contact-line {
+    width: 150px;
+    height: 18px;
+    left: 9.5%;
+    top: 35%;
+  }
+}

@@ -36,7 +36,7 @@
   top: 1.5%;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
   .img-wrapper .title-wrapper .title-wrap .box {
     width: 0.5em;
     height: 1.9em;
@@ -53,7 +53,7 @@
   top: 43%;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
   .img-wrapper .title-wrapper .title-wrap .line {
     top: 7%;
     left: 37%;
@@ -70,7 +70,7 @@
   padding-bottom: 0.5em;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
   .img-wrapper .title-wrapper .title-wrap .hello {
     font-size: 2em;
     padding-top: 0.1em;
@@ -91,7 +91,7 @@
   font-family: "Noto Serif KR", serif;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
   .img-wrapper .title-wrapper .title-wrap .title .p2 {
     max-width: 100%;
     font-size: 2.3em;
@@ -104,14 +104,14 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
   .img-wrapper .title-wrapper .title-wrap .title .p3 {
     font-size: 2em;
     padding-left: 2em;
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
   .img-wrapper .title-wrapper .title-wrap .title {
     max-width: 100%;
     display: block;
@@ -124,7 +124,7 @@
   font-family: "Noto Serif KR", serif;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
   .img-wrapper .title-wrapper .title-wrap .title .p4 {
     font-size: 1.3em;
     padding-left: 4.1em;
@@ -139,10 +139,10 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 767px) {
   .img-wrapper .title-wrapper .title-wrap .p5 {
     position: absolute;
-    bottom: -30em;
+    bottom: -20em;
   }
 }
 

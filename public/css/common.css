@@ -7,25 +7,25 @@ a {
   color: inherit;
 }
 
+a:hover {
+  color: #4bf1f1;
+}
+
 header .h-wrapper {
-  background-color: #1d1d1d;
   background: url(../img/p3-2.jpg) no-repeat center center fixed;
 }
 
 header .h-wrapper .navi-wrapper {
   z-index: 9999;
-  width: 70px;
-  height: 100vh;
-  background-color: #111;
-  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.4);
+  background-color: #1d1d1d;
   position: relative;
 }
 
 header .h-wrapper .navi-wrapper .navi {
-  position: absolute;
+  position: fixed;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateY(-50%);
+  left: 1.25%;
 }
 
 header .h-wrapper .navi-wrapper .navi .menu {

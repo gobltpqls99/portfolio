@@ -15,6 +15,11 @@
 		@content;
 	}
 }
+@mixin desktopM1 {
+	@media screen and (max-width: 1430px) {
+		@content;
+	}
+}
 @mixin desktopS {
 	@media screen and (max-width: 1250px) {
 		@content;
@@ -37,7 +42,7 @@
 		@content;
 	}
 }
-@mixin tablet {
+@mixin tabletM {
 	@media screen and (max-width: 680px) {
 		@content;
 	}

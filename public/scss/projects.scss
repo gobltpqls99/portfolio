@@ -2,7 +2,6 @@
 
 
 .container {
-	overflow: visible;
 	.title-wrapper {
 		position: absolute;
 		top: 12%; left: 15%;
@@ -17,30 +16,102 @@
 		}
 	}
 	.line {
-		width: 0.02em; height: 80%;
+		width: 0.02em; height: 150%;
 		background-color: #4af1f1;
-		position: absolute; top: 25.5%; left: 22.3%;
-		.dot {
+		position: absolute; top: 25%; left: 26.5%;
+		.dot1 {
 			color: #dedede;
 			width: 10px; height: 10px; border-radius: 50%;
 			background-color: #4af1f1;
-			position: absolute; top: 20%; left: -0.24em;
+			position: absolute; top: 15%; left: -0.24em;
+			position: relative;
+			.html {
+				width: 300px; color: #dedede;
+				font-size: 1.3em; font-family: $d2;
+				position: absolute; top: -30%; left: 1.8em;
+				.box-wrapper{
+					position: absolute;
+					top: 5.2em; left: 13.2em;
+					display: flex;
+					.box {
+						width: 300px; height: 200px; background-color: #dedede; margin-right: 1.5em;
+					}
+				}
+			}
+		}
+		.dot2 {
+			color: #dedede;
+			width: 10px; height: 10px; border-radius: 50%;
+			background-color: #4af1f1;
+			position: absolute; top: 42%; left: -0.24em;
+			.node {
+				width: 300px; color: #dedede;
+				font-size: 1.3em; font-family: $d2;
+				position: absolute; top: -30%; left: 1.8em;
+				.box-wrapper{
+					position: absolute;
+					top: 5.2em; left: 13.2em;
+					display: flex;
+					.box {
+						width: 300px; height: 200px; background-color: #dedede; margin-right: 1.5em;
+					}
+				}
+			}
+		}
+		.dot3 {
+			color: #dedede;
+			width: 10px; height: 10px; border-radius: 50%;
+			background-color: #4af1f1;
+			position: absolute; top: 68%; left: -0.24em;
+			.vue {
+				width: 300px; color: #dedede;
+				font-size: 1.3em; font-family: $d2;
+				position: absolute; top: -30%; left: 1.8em;
+				.box-wrapper{
+					position: absolute;
+					top: 5.2em; left: 13.2em;
+					display: flex;
+					.box {
+						width: 300px; height: 200px; background-color: #dedede; margin-right: 1.5em;
+					}
+				}
+			}
 		}
 	}
-	.html-wrapper {
-		.html {
-			color: #dedede;
-			
-			padding-left: 2em; margin-top: 3em;
-			font-size: 1.2em;
-			display: flex; align-items: center; justify-content: space-between;
-			width: 300px; font-family: $d2;
-		}
-		.box-wrapper{
-			position: absolute; top: 6em; left: 18em;
-			display: flex;
-			.box {
-				width: 300px; height: 200px; background-color: #dedede; margin-right: 1.5em;
+	@include desktopS {
+		.line {
+			top: 30%;
+			height: 320%;
+			left: 28%;
+			.dot1 {
+				top: 8em;
+				.html {
+					.box-wrapper{
+						left: 40%; top: 14em;
+						flex-direction: column;
+						.box { margin: 1em 0; }
+					}				
+				}
+			}
+			.dot2 {
+				top: 70em;
+				.node {
+					.box-wrapper{
+						left: 40%; top: 14em;
+						flex-direction: column;
+						.box { margin: 1em 0; }
+					}				
+				}
+			}
+			.dot3 {
+				top: 130em;
+				.vue {
+					.box-wrapper{
+						left: 40%; top: 14em;
+						flex-direction: column;
+						.box { margin: 1em 0; }
+					}				
+				}
 			}
 		}
 	}
@@ -48,5 +119,8 @@
 @include original {
 	body {
 		overflow-y: auto;
+		min-width: 100%; min-height: 100%;
+		background-color: #1d1d1d;
+		background: url(../img/p3-2.jpg) no-repeat center center fixed;
 	}
 }
