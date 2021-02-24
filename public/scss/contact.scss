@@ -1,9 +1,5 @@
 @import './mixin';
 
-// strong {
-//   width: 30px; height: 1px; background-color: rgba(75, 241, 241,0.4);
-// }
-
 .title-wrapper {
   position: absolute;
   top: 12%; left: 15%;
@@ -17,42 +13,39 @@
     margin-right: 0.1em;
   }
 }
-
-.text-wrapper {
-  width: 100%;
-  color: #dedede; font-family: $Notos;
-  position: absolute; top: 33%; left: 15%;
-  font-size: 1.2em;
-  .text-wrap {
-    position: relative;
-    .hello {
-      margin-top: 1.3em;
-    }
-    .text{
-      display: flex; justify-content: baseline;
+.con-wrapper {
+  width: 100%; height: 100vh;
+  position: relative;
+  .text-wrapper {
+    width: 570px; height: 200px;
+    color: #dedede; font-family: $Notos;
+    position: absolute; bottom: 46.7%; left: 15%;
+    font-size: 1.2em;
+    .text-wrap {
       .hello {
-        margin-top: 1.3em; padding-right: 0.5em;
+        margin-top: 1.3em;
       }
-      .he4 {
-        position: relative;
-        .pen {
-          width: 58px; height: 15px; background-color: #4bf1f14f;
-          position: absolute; top: 27%;
-          left: -2.6%; transform: translate(0, 27%);
+      .text{
+        display: flex; justify-content: baseline;
+        .hello { margin-top: 1.3em; padding-right: 0.5em; }
+        .he4 { position: relative; width: 66px;
+          .pen {
+            width: 100%; height: 12px; background-color: #4bf1f14f;
+            position: absolute; top: 60%; left: -5%;
+          }
         }
       }
-
     }
   }
-.line {
-  width: 100%; height: 0.02em;
-  background-color: #4bf1f1;
-  position: absolute; left: 27%; top: 72.5%;
-}
+  .line {
+    width: 100%; height: 0.01em;
+    background-color: #4bf1f1;
+    position: absolute; left: 43%; top: 45.5%;
+  }
   .container {
-    position: absolute; right: -10%;
-    top: 85%;
-    font-size: 1.2em;
+    position: absolute; bottom: 20%; left: 65%;
+    color: #dedede;
+    font-size: 1.45em;
     font-family: $d2;
     .contact-wrapper {
       display: flex; align-items: baseline;
@@ -61,11 +54,12 @@
         padding: 1.3em 0;
         padding-left: 1.5em;
         padding-right: 0.5em;
+        position: relative;
+        .contact-line {
+          position: absolute; left: 44.5%; bottom: 35%;
+          width: 180px; height: 17px; background-color: #4bf1f14f;
+        }
       }
-    }
-    .contact-line {
-      width: 200px; height: 23px; background-color: #4bf1f14f;
-      position: absolute; top: 36%; left: 4.7%;
     }
     .p {
       padding: 0.5em 2em;
@@ -73,86 +67,36 @@
     }
   }
   @include desktopL {
-    .line {
-      left: 34%;
-    }
-    .container {
-      right: -25%;
-    }
+    .line { left: 49%; }
   }
   @include desktopM {
-    .line {
-      left: 37%;
-    }
-    .container {
-      right: -28%;
-    }
+    .line { left: 55%; }
   }
   @include desktopM1 {
-    .line {
-      left: 42%;
-    }
-    .container {
-      right: -38%;
-    }
+    .line { left: 60%; }
   }
   @include desktopS {
-    .line {
-      left: -10%;
-      top: 12em;
-    }
-    .container {
-      right: -40%; top: 12em;
-    }
+    .line { left: 0%; top: 60%; }
   }
   @include desktop {
     .container {
-      right: -35%;
-      .contact-line { left: 5.5%; }
-    }
-    
-  }
-  @include laptop {
-    .container {
-      right: -18%;
-      .contact-line {left: 7.2%;}
+      right: 60%; bottom: 9%;
+      transform: translateX(-60%);
     }
   }
   @include tablet {
-    .container {
-      right: 3%;
-      .contact-line { left: 9%; }
+    .text-wrapper {
+      font-size: 1em;
     }
   }
   @include mobile {
-    font-size: 1em;
-    .text-wrapper {
-      .text-wrap {
-        .text {
-          .he4 {
-            .pen {
-              max-width: 48px;
-            }
-          } 
-        }
-      }
-    }
-    .container{
-      .contact-line {
-        width: 150px;
-        left: 9.5%;
-      }      
-    }
+    font-size: 0.8em;
+    .text-wrapper { width: 400px; margin-left: 10px; }
+    .line { top: 48%; }
+    .container { bottom: 27%; left: 20%; transform: translateX(0); }
   }
   @include mobileS {
-    font-size: 0.75em;
-    .container{
-      .contact-line {
-        width: 150px;
-        height: 18px;
-        left: 9.5%;
-        top: 35%;
-      }      
-    }
+    .text-wrapper { display: none; }
+    .container { display: none; }
   }
 }

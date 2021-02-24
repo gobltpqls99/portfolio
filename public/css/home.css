@@ -29,10 +29,10 @@
 
 .img-wrapper .title-wrapper .title-wrap .box {
   width: 0.2em;
-  height: 1em;
+  height: 1.2em;
   background-color: #4af1f1;
   position: absolute;
-  left: -1.6%;
+  left: -1.7%;
   top: 1.5%;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .img-wrapper .title-wrapper .title-wrap .line {
-  width: 100%;
+  width: 100vh;
   height: 0.02em;
   background-color: #4af1f1;
   position: absolute;

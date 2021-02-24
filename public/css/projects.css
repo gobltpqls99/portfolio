@@ -49,8 +49,7 @@
 
 .container .line .dot1 .html .box-wrapper {
   position: absolute;
-  top: 5.2em;
-  left: 13.2em;
+  top: 1.2em;
   display: flex;
 }
 
@@ -84,8 +83,7 @@
 
 .container .line .dot2 .node .box-wrapper {
   position: absolute;
-  top: 5.2em;
-  left: 13.2em;
+  top: 1.2em;
   display: flex;
 }
 
@@ -119,8 +117,7 @@
 
 .container .line .dot3 .vue .box-wrapper {
   position: absolute;
-  top: 5.2em;
-  left: 13.2em;
+  top: 1.2em;
   display: flex;
 }
 
@@ -141,8 +138,7 @@
     top: 8em;
   }
   .container .line .dot1 .html .box-wrapper {
-    left: 40%;
-    top: 14em;
+    top: 1.2em;
     flex-direction: column;
   }
   .container .line .dot1 .html .box-wrapper .box {
@@ -152,8 +148,7 @@
     top: 70em;
   }
   .container .line .dot2 .node .box-wrapper {
-    left: 40%;
-    top: 14em;
+    top: 1.2em;
     flex-direction: column;
   }
   .container .line .dot2 .node .box-wrapper .box {
@@ -163,8 +158,7 @@
     top: 130em;
   }
   .container .line .dot3 .vue .box-wrapper {
-    left: 40%;
-    top: 14em;
+    top: 1.2em;
     flex-direction: column;
   }
   .container .line .dot3 .vue .box-wrapper .box {
@@ -179,5 +173,11 @@
     min-height: 100%;
     background-color: #1d1d1d;
     background: url(../img/p3-2.jpg) no-repeat center center fixed;
+  }
+}
+
+@media screen and (max-width: 2000px) and (max-width: 515px) {
+  .line {
+    display: none;
   }
 }

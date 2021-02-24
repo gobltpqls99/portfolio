@@ -30,8 +30,7 @@
 				font-size: 1.3em; font-family: $d2;
 				position: absolute; top: -30%; left: 1.8em;
 				.box-wrapper{
-					position: absolute;
-					top: 5.2em; left: 13.2em;
+					position: absolute; top: 1.2em;
 					display: flex;
 					.box {
 						width: 300px; height: 200px; background-color: #dedede; margin-right: 1.5em;
@@ -49,8 +48,7 @@
 				font-size: 1.3em; font-family: $d2;
 				position: absolute; top: -30%; left: 1.8em;
 				.box-wrapper{
-					position: absolute;
-					top: 5.2em; left: 13.2em;
+					position: absolute; top: 1.2em;
 					display: flex;
 					.box {
 						width: 300px; height: 200px; background-color: #dedede; margin-right: 1.5em;
@@ -68,8 +66,7 @@
 				font-size: 1.3em; font-family: $d2;
 				position: absolute; top: -30%; left: 1.8em;
 				.box-wrapper{
-					position: absolute;
-					top: 5.2em; left: 13.2em;
+					position: absolute; top: 1.2em;
 					display: flex;
 					.box {
 						width: 300px; height: 200px; background-color: #dedede; margin-right: 1.5em;
@@ -86,9 +83,7 @@
 			.dot1 {
 				top: 8em;
 				.html {
-					.box-wrapper{
-						left: 40%; top: 14em;
-						flex-direction: column;
+					.box-wrapper{ top: 1.2em; flex-direction: column;
 						.box { margin: 1em 0; }
 					}				
 				}
@@ -96,9 +91,7 @@
 			.dot2 {
 				top: 70em;
 				.node {
-					.box-wrapper{
-						left: 40%; top: 14em;
-						flex-direction: column;
+					.box-wrapper{ top: 1.2em; flex-direction: column;
 						.box { margin: 1em 0; }
 					}				
 				}
@@ -106,9 +99,7 @@
 			.dot3 {
 				top: 130em;
 				.vue {
-					.box-wrapper{
-						left: 40%; top: 14em;
-						flex-direction: column;
+					.box-wrapper{ top: 1.2em;  flex-direction: column;
 						.box { margin: 1em 0; }
 					}				
 				}
@@ -123,4 +114,7 @@
 		background-color: #1d1d1d;
 		background: url(../img/p3-2.jpg) no-repeat center center fixed;
 	}
+	@include mobileS {
+    .line { display: none; }
+  }
 }
