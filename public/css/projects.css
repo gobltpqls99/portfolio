@@ -1,4 +1,4 @@
-.container .title-wrapper {
+.Pcontainer .Ptitle-wrapper {
   position: absolute;
   top: 12%;
   left: 15%;
@@ -9,14 +9,14 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.container .title-wrapper .color {
+.Pcontainer .Ptitle-wrapper .color {
   width: 0.5em;
   height: 0.1em;
   background-color: #4af1f1;
   margin-right: 0.1em;
 }
 
-.container .line {
+.Pcontainer .line {
   width: 0.02em;
   height: 150%;
   background-color: #4af1f1;
@@ -25,7 +25,7 @@
   left: 26.5%;
 }
 
-.container .line .dot1 {
+.Pcontainer .line .dot1 {
   color: #dedede;
   width: 10px;
   height: 10px;
@@ -37,7 +37,7 @@
   position: relative;
 }
 
-.container .line .dot1 .html {
+.Pcontainer .line .dot1 .html {
   width: 300px;
   color: #dedede;
   font-size: 1.3em;
@@ -47,20 +47,21 @@
   left: 1.8em;
 }
 
-.container .line .dot1 .html .box-wrapper {
+.Pcontainer .line .dot1 .html .Pbox-wrapper {
   position: absolute;
-  top: 1.2em;
+  top: 2em;
+  left: 0;
   display: flex;
 }
 
-.container .line .dot1 .html .box-wrapper .box {
+.Pcontainer .line .dot1 .html .Pbox-wrapper .box {
   width: 300px;
   height: 200px;
   background-color: #dedede;
   margin-right: 1.5em;
 }
 
-.container .line .dot2 {
+.Pcontainer .line .dot2 {
   color: #dedede;
   width: 10px;
   height: 10px;
@@ -71,7 +72,7 @@
   left: -0.24em;
 }
 
-.container .line .dot2 .node {
+.Pcontainer .line .dot2 .node {
   width: 300px;
   color: #dedede;
   font-size: 1.3em;
@@ -81,20 +82,21 @@
   left: 1.8em;
 }
 
-.container .line .dot2 .node .box-wrapper {
+.Pcontainer .line .dot2 .node .Pbox-wrapper {
   position: absolute;
-  top: 1.2em;
+  top: 2em;
+  left: 0;
   display: flex;
 }
 
-.container .line .dot2 .node .box-wrapper .box {
+.Pcontainer .line .dot2 .node .Pbox-wrapper .box {
   width: 300px;
   height: 200px;
   background-color: #dedede;
   margin-right: 1.5em;
 }
 
-.container .line .dot3 {
+.Pcontainer .line .dot3 {
   color: #dedede;
   width: 10px;
   height: 10px;
@@ -105,7 +107,7 @@
   left: -0.24em;
 }
 
-.container .line .dot3 .vue {
+.Pcontainer .line .dot3 .vue {
   width: 300px;
   color: #dedede;
   font-size: 1.3em;
@@ -115,13 +117,14 @@
   left: 1.8em;
 }
 
-.container .line .dot3 .vue .box-wrapper {
+.Pcontainer .line .dot3 .vue .Pbox-wrapper {
   position: absolute;
-  top: 1.2em;
+  top: 2em;
+  left: 0;
   display: flex;
 }
 
-.container .line .dot3 .vue .box-wrapper .box {
+.Pcontainer .line .dot3 .vue .Pbox-wrapper .box {
   width: 300px;
   height: 200px;
   background-color: #dedede;
@@ -129,55 +132,53 @@
 }
 
 @media screen and (max-width: 1250px) {
-  .container .line {
+  .Pcontainer .line {
     top: 30%;
     height: 320%;
     left: 28%;
   }
-  .container .line .dot1 {
+  .Pcontainer .line .dot1 {
     top: 8em;
   }
-  .container .line .dot1 .html .box-wrapper {
+  .Pcontainer .line .dot1 .html .Pbox-wrapper {
     top: 1.2em;
     flex-direction: column;
   }
-  .container .line .dot1 .html .box-wrapper .box {
+  .Pcontainer .line .dot1 .html .Pbox-wrapper .box {
     margin: 1em 0;
   }
-  .container .line .dot2 {
+  .Pcontainer .line .dot2 {
     top: 70em;
   }
-  .container .line .dot2 .node .box-wrapper {
+  .Pcontainer .line .dot2 .node .Pbox-wrapper {
     top: 1.2em;
     flex-direction: column;
   }
-  .container .line .dot2 .node .box-wrapper .box {
+  .Pcontainer .line .dot2 .node .Pbox-wrapper .box {
     margin: 1em 0;
   }
-  .container .line .dot3 {
+  .Pcontainer .line .dot3 {
     top: 130em;
   }
-  .container .line .dot3 .vue .box-wrapper {
+  .Pcontainer .line .dot3 .vue .Pbox-wrapper {
     top: 1.2em;
     flex-direction: column;
   }
-  .container .line .dot3 .vue .box-wrapper .box {
+  .Pcontainer .line .dot3 .vue .Pbox-wrapper .box {
     margin: 1em 0;
   }
 }
 
-@media screen and (max-width: 2000px) {
-  body {
-    overflow-y: auto;
-    min-width: 100%;
-    min-height: 100%;
-    background-color: #1d1d1d;
-    background: url(../img/p3-2.jpg) no-repeat center center fixed;
-  }
+body {
+  overflow-y: auto;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #1d1d1d;
+  background: url(../img/p3-2.jpg) no-repeat center center fixed;
 }
 
-@media screen and (max-width: 2000px) and (max-width: 515px) {
-  .line {
+@media screen and (max-width: 515px) {
+  body .line {
     display: none;
   }
 }

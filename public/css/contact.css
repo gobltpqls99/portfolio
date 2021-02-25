@@ -1,4 +1,7 @@
-.title-wrapper {
+.Ctitle-wrapper {
+  margin-bottom: 3em;
+  width: 100%;
+  height: 100px;
   position: absolute;
   top: 12%;
   left: 15%;
@@ -9,7 +12,7 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.title-wrapper .color {
+.Ctitle-wrapper .color {
   width: 0.5em;
   height: 0.1em;
   background-color: #4bf1f1;
@@ -23,12 +26,12 @@
 }
 
 .con-wrapper .text-wrapper {
-  width: 570px;
+  width: 100%;
   height: 200px;
   color: #dedede;
   font-family: "Noto Sans KR", sans-serif;
   position: absolute;
-  bottom: 46.7%;
+  top: 35%;
   left: 15%;
   font-size: 1.2em;
 }
@@ -38,6 +41,7 @@
 }
 
 .con-wrapper .text-wrapper .text-wrap .text {
+  position: relative;
   display: flex;
   justify-content: baseline;
 }
@@ -61,38 +65,50 @@
   left: -5%;
 }
 
-.con-wrapper .line {
+@media screen and (max-width: 767px) {
+  .con-wrapper .text-wrapper .text-wrap .text .he4 .pen {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .con-wrapper .text-wrapper .text-wrap .text .he4 .pen {
+    width: 70%;
+  }
+}
+
+.con-wrapper .text-wrapper .text-wrap .line {
   width: 100%;
   height: 0.01em;
   background-color: #4bf1f1;
   position: absolute;
-  left: 43%;
-  top: 45.5%;
+  left: 27%;
+  bottom: 8%;
 }
 
-.con-wrapper .container {
+.con-wrapper .text-wrapper .text-wrap .container {
   position: absolute;
-  bottom: 20%;
-  left: 65%;
+  top: 93%;
+  right: -10%;
   color: #dedede;
   font-size: 1.45em;
   font-family: "Nanum Gothic Coding", monospace;
 }
 
-.con-wrapper .container .contact-wrapper {
+.con-wrapper .text-wrapper .text-wrap .container .contact-wrapper {
   display: flex;
   align-items: baseline;
   font-size: 1.5em;
 }
 
-.con-wrapper .container .contact-wrapper h1 {
+.con-wrapper .text-wrapper .text-wrap .container .contact-wrapper h1 {
   padding: 1.3em 0;
   padding-left: 1.5em;
   padding-right: 0.5em;
   position: relative;
 }
 
-.con-wrapper .container .contact-wrapper h1 .contact-line {
+.con-wrapper .text-wrapper .text-wrap .container .contact-wrapper h1 .contact-line {
   position: absolute;
   left: 44.5%;
   bottom: 35%;
@@ -101,41 +117,59 @@
   background-color: #4bf1f14f;
 }
 
-.con-wrapper .container .p {
+.con-wrapper .text-wrapper .text-wrap .container .p {
   padding: 0.5em 2em;
   font-size: 0.7em;
 }
 
+@media screen and (max-width: 1900px) {
+  .con-wrapper .text-wrapper .text-wrap .text .line {
+    left: 32%;
+  }
+  .con-wrapper .text-wrapper .text-wrap .container {
+    top: 110%;
+  }
+}
+
 @media screen and (max-width: 1700px) {
-  .con-wrapper .line {
-    left: 49%;
+  .con-wrapper .text-wrapper .text-wrap .text .line {
+    left: 35%;
   }
 }
 
 @media screen and (max-width: 1580px) {
-  .con-wrapper .line {
-    left: 55%;
+  .con-wrapper .text-wrapper .text-wrap .text .line {
+    left: 37%;
   }
 }
 
 @media screen and (max-width: 1430px) {
-  .con-wrapper .line {
-    left: 60%;
+  .con-wrapper .text-wrapper .text-wrap .text .line {
+    left: 40%;
   }
 }
 
 @media screen and (max-width: 1250px) {
-  .con-wrapper .line {
-    left: 0%;
-    top: 60%;
+  .con-wrapper .text-wrapper .text-wrap .text .line {
+    left: 45%;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .con-wrapper .container {
-    right: 60%;
-    bottom: 9%;
-    transform: translateX(-60%);
+  .con-wrapper .text-wrapper .text-wrap .text .line {
+    left: -15%;
+    bottom: -150%;
+  }
+  .con-wrapper .text-wrapper .text-wrap .container {
+    top: 110%;
+    right: 0%;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .con-wrapper .text-wrapper .text-wrap .container {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -143,31 +177,26 @@
   .con-wrapper .text-wrapper {
     font-size: 1em;
   }
+  .con-wrapper .text-wrapper .text-wrap .text .line {
+    bottom: -200%;
+  }
 }
 
 @media screen and (max-width: 615px) {
-  .con-wrapper {
+  .con-wrapper .text-wrapper {
     font-size: 0.8em;
   }
-  .con-wrapper .text-wrapper {
+  .con-wrapper .text-wrapper .text-wrapper {
     width: 400px;
     margin-left: 10px;
   }
-  .con-wrapper .line {
-    top: 48%;
-  }
-  .con-wrapper .container {
-    bottom: 27%;
-    left: 20%;
-    transform: translateX(0);
+  .con-wrapper .text-wrapper .text-wrapper .text-wrap .line {
+    bottom: 0%;
   }
 }
 
 @media screen and (max-width: 515px) {
   .con-wrapper .text-wrapper {
-    display: none;
-  }
-  .con-wrapper .container {
     display: none;
   }
 }

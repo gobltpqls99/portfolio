@@ -1,4 +1,4 @@
-.title-wrapper {
+.Stitle-wrapper {
   position: absolute;
   top: 12%;
   left: 15%;
@@ -9,33 +9,36 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.title-wrapper .color {
+.Stitle-wrapper .color {
   width: 0.5em;
   height: 0.1em;
   background-color: #4af1f1;
   margin-right: 0.1em;
 }
 
-.box-wrapper {
+.Sbox-wrapper {
   font-family: "Nanum Gothic Coding", monospace;
   width: 100%;
   height: 100%;
   margin-bottom: 2em;
+  position: absolute;
+  left: 40%;
   color: #dedede;
   font-size: 1.5em;
 }
 
-.box-wrapper .frameworks {
+.Sbox-wrapper .frameworks {
+  margin-top: 6em;
   text-align: center;
   width: 450px;
   height: 380px;
   background: rgba(255, 255, 255, 0.23);
   border: 1px solid #dedede;
-  padding-top: 1.5em;
+  padding-top: 2em;
   position: relative;
 }
 
-.box-wrapper .frameworks .tape {
+.Sbox-wrapper .frameworks .tape {
   width: 30px;
   height: 70px;
   background-color: rgba(255, 255, 255, 0.26);
@@ -45,7 +48,7 @@
   transform: translateX(-48%) rotate(9deg);
 }
 
-.box-wrapper .frameworks .line {
+.Sbox-wrapper .frameworks .s-line {
   width: 2.3em;
   height: 0.02em;
   opacity: .5;
@@ -55,11 +58,11 @@
   left: -12.55%;
 }
 
-.box-wrapper .frameworks .img-box img {
+.Sbox-wrapper .frameworks .img-box img {
   margin: 0.7em 1em;
 }
 
-.box-wrapper .frontend {
+.Sbox-wrapper .frontend {
   text-align: left;
   width: 350px;
   height: 300px;
@@ -67,27 +70,43 @@
   border: 1px solid #dedede;
   padding-top: 1em;
   padding-left: 1em;
+  position: absolute;
+  left: -23.4%;
+  top: 40%;
 }
 
-.box-wrapper .frontend .img-box {
-  padding-left: 2em;
+.Sbox-wrapper .frontend .img-box {
+  padding-left: 0.8em;
   padding-top: 0.7em;
 }
 
-.box-wrapper .frontend .img-box img {
+.Sbox-wrapper .frontend .img-box div {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.9em;
+  text-align: center;
+  padding-top: 0.9em;
+}
+
+.Sbox-wrapper .frontend .img-box img {
   margin: 0.5em 0.8em;
 }
 
-.box-wrapper .backend {
+.Sbox-wrapper .backend {
   text-align: center;
   width: 250px;
   height: 230px;
   background: rgba(255, 255, 255, 0.23);
   border: 1px solid #dedede;
   padding-top: 1em;
+  position: absolute;
+  right: 56.1%;
+  top: 27%;
 }
 
-.box-wrapper .backend .line {
+.Sbox-wrapper .backend .s-line {
   width: 2.75em;
   height: 0.02em;
   opacity: .5;
@@ -97,17 +116,17 @@
   left: -27%;
 }
 
-.box-wrapper .backend .img-box img {
+.Sbox-wrapper .backend .img-box img {
   margin: 0.5em 0.5em;
 }
 
-.box-wrapper .backend .img-box div {
+.Sbox-wrapper .backend .img-box div {
   display: inline-block;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.8em;
 }
 
-.box-wrapper .tools {
+.Sbox-wrapper .tools {
   text-align: left;
   width: 250px;
   height: 200px;
@@ -115,9 +134,12 @@
   border: 1px solid #dedede;
   padding-top: 1em;
   padding-left: 1em;
+  position: absolute;
+  left: 22%;
+  bottom: 11.8%;
 }
 
-.box-wrapper .tools .line {
+.Sbox-wrapper .tools .s-line {
   width: 0.02em;
   height: 1.2em;
   opacity: .5;
@@ -127,26 +149,29 @@
   left: 7%;
 }
 
-.box-wrapper .tools .img-box {
+.Sbox-wrapper .tools .img-box {
   text-align: center;
   padding-top: 0.8em;
   margin-right: 1em;
 }
 
-.box-wrapper .tools .img-box img {
+.Sbox-wrapper .tools .img-box img {
   margin: 0.5em 0.5em;
 }
 
-.box-wrapper .design {
+.Sbox-wrapper .design {
   text-align: center;
   width: 280px;
   height: 200px;
   background: rgba(255, 255, 255, 0.23);
   border: 1px solid #dedede;
   padding-top: 1em;
+  position: absolute;
+  left: 3.3%;
+  bottom: 5%;
 }
 
-.box-wrapper .design .line {
+.Sbox-wrapper .design .s-line {
   width: 1.85em;
   height: 0.05em;
   opacity: .5;
@@ -156,10 +181,61 @@
   right: -17%;
 }
 
-.box-wrapper .design .img-box {
+.Sbox-wrapper .design .img-box {
   padding-top: 1em;
 }
 
-.box-wrapper .design .img-box img {
+.Sbox-wrapper .design .img-box img {
   margin: 0.5em 0.3em;
+}
+
+@media screen and (max-width: 1700px) {
+  .Sbox-wrapper .s-line {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Sbox-wrapper .frameworks .s-line {
+    display: none;
+  }
+  .Sbox-wrapper .frontend, .Sbox-wrapper .backend, .Sbox-wrapper .tools, .Sbox-wrapper .design {
+    position: static;
+    margin-top: 2em;
+    text-align: center;
+    width: 450px;
+  }
+  .Sbox-wrapper .frontend .img-box, .Sbox-wrapper .backend .img-box, .Sbox-wrapper .tools .img-box, .Sbox-wrapper .design .img-box {
+    padding-top: 1.5em;
+    padding-left: 0;
+  }
+  .Sbox-wrapper .frontend .s-line, .Sbox-wrapper .backend .s-line, .Sbox-wrapper .tools .s-line, .Sbox-wrapper .design .s-line {
+    display: none;
+  }
+  .Sbox-wrapper .frontend {
+    padding-left: 0;
+    padding-top: 1.5em;
+    height: 300px;
+  }
+  .Sbox-wrapper .frontend .img-box img {
+    width: 60px;
+    margin: 0.5em;
+  }
+  .Sbox-wrapper .tools {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .Sbox-wrapper {
+    position: static;
+    margin-top: 10em;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  .Sbox-wrapper {
+    display: none;
+  }
 }

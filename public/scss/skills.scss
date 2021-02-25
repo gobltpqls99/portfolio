@@ -1,6 +1,6 @@
 @import './mixin';
 
-.title-wrapper {
+.Stitle-wrapper {
 	position: absolute;
 	top: 12%; left: 15%;
 	color: #dedede;
@@ -12,22 +12,22 @@
 		background-color: #4af1f1;
 		margin-right: 0.1em;
 	}
+	// @include original { padding-left: 5em;}
 }
-.box-wrapper {
+.Sbox-wrapper {
 	font-family: $d2;
 	width: 100%; height: 100%;
 	margin-bottom: 2em;
-	// position: absolute;
-	// top: 40%; left: 53%;
-	// transform: translate(-40%,-53%);
+	position: absolute; left: 40%;
 	color: #dedede;
 	font-size: 1.5em;
 	.frameworks {
+		margin-top: 6em;
 		text-align: center;
 		width: 450px; height: 380px;
 		background: rgba(255, 255, 255, 0.23);
 		border: 1px solid #dedede;
-		padding-top: 1.5em;
+		padding-top: 2em;
 		position: relative;
 		.tape {
 			width: 30px; height: 70px;
@@ -35,7 +35,7 @@
 			position: absolute; top: -11%; left: 48%;
 			transform: translateX(-48%) rotate(9deg);
 		}
-		.line {
+		.s-line {
 			width: 2.3em; height: 0.02em;
 			opacity: .5;
 			background-color: #dedede;
@@ -54,11 +54,21 @@
 		border: 1px solid #dedede;
 		padding-top: 1em;
 		padding-left: 1em;
-		// position: absolute;
-		// left: -90%; top: 60%;
+		position: absolute;
+		left: -23.4%; top: 40%;
 		.img-box {
-			padding-left: 2em;
+			padding-left: 0.8em;
 			padding-top: 0.7em;
+			div {
+				width: 70px; height: 70px;
+				display: inline-block;
+				font-family: $Notos;
+				font-size: 0.9em;
+				// background-color: #b6d7fd;
+				// color: #1d1d1d;
+				text-align: center;
+				padding-top: 0.9em;
+			}
 			img {
 				margin: 0.5em 0.8em;
 			}
@@ -70,9 +80,9 @@
 		background: rgba(255, 255, 255, 0.23);
 		border: 1px solid #dedede;
 		padding-top: 1em;
-		// position: absolute;
-		// right: -70%; top: 27%;
-		.line {
+		position: absolute;
+		right: 56.1%; top: 27%;
+		.s-line {
 			width: 2.75em; height: 0.02em;
 			opacity: .5;
 			background-color: #dedede;
@@ -92,9 +102,9 @@
 		border: 1px solid #dedede;
 		padding-top: 1em;
 		padding-left: 1em;
-		// position: absolute;
-		// left: 80%; bottom: -60%;
-		.line {
+		position: absolute;
+		left: 22%; bottom: 11.8%;
+		.s-line {
 			width: 0.02em; height: 1.2em;
 			opacity: .5;
 			background-color: #dedede;
@@ -115,9 +125,9 @@
 		background: rgba(255, 255, 255, 0.23);
 		border: 1px solid #dedede;
 		padding-top: 1em;
-		// position: absolute;
-		// right: 30%; bottom: -80%;
-		.line {
+		position: absolute;
+		left: 3.3%; bottom: 5%;
+		.s-line {
 			width: 1.85em; height: 0.05em;
 			opacity: .5;
 			background-color: #dedede;
@@ -130,4 +140,29 @@
 			}
 		}
 	}
+	@include desktopL {
+		.s-line { display: none; }
+	}
+	@include desktop {
+		.frameworks { .s-line { display: none; } }
+		.frontend, .backend, .tools, .design {
+			position: static;
+			margin-top: 2em;
+			text-align: center;
+			width: 450px;
+			.img-box {
+				padding-top: 1.5em;
+				padding-left: 0;
+			}
+			.s-line { display: none; }
+		}
+		.frontend {
+			padding-left: 0; padding-top: 1.5em;
+			height: 300px;
+			.img-box { img { width: 60px; margin: 0.5em;} }
+		}
+		.tools { padding-left: 0; }
+	}
+	@include laptop { position: static; margin-top: 10em; margin-left: 20%;}
+	@include mobile { display: none; }
 }

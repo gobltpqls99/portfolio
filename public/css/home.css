@@ -1,7 +1,5 @@
-@media screen and (max-width: 2000px) {
-  body {
-    overflow: hidden;
-  }
+body {
+  overflow: hidden;
 }
 
 .img-wrapper {
@@ -13,7 +11,7 @@
   left: 70px;
 }
 
-.img-wrapper .title-wrapper {
+.img-wrapper .Htitle-wrapper {
   color: #dedede;
   font-size: 3em;
   position: absolute;
@@ -23,11 +21,11 @@
   width: 57%;
 }
 
-.img-wrapper .title-wrapper .title-wrap {
+.img-wrapper .Htitle-wrapper .title-wrap {
   position: relative;
 }
 
-.img-wrapper .title-wrapper .title-wrap .box {
+.img-wrapper .Htitle-wrapper .title-wrap .box {
   width: 0.2em;
   height: 1.2em;
   background-color: #4af1f1;
@@ -37,41 +35,47 @@
 }
 
 @media screen and (max-width: 767px) {
-  .img-wrapper .title-wrapper .title-wrap .box {
+  .img-wrapper .Htitle-wrapper .title-wrap .box {
     width: 0.5em;
     height: 1.9em;
     left: -25%;
   }
 }
 
-.img-wrapper .title-wrapper .title-wrap .line {
+.img-wrapper .Htitle-wrapper .title-wrap .h-line {
   width: 100vh;
   height: 0.02em;
   background-color: #4af1f1;
   position: absolute;
-  left: 75.2%;
+  left: 70%;
   top: 43%;
 }
 
+@media screen and (max-width: 1580px) {
+  .img-wrapper .Htitle-wrapper .title-wrap .h-line {
+    left: 53%;
+  }
+}
+
 @media screen and (max-width: 767px) {
-  .img-wrapper .title-wrapper .title-wrap .line {
+  .img-wrapper .Htitle-wrapper .title-wrap .h-line {
     top: 7%;
     left: 37%;
   }
 }
 
-.img-wrapper .title-wrapper .title-wrap .p {
+.img-wrapper .Htitle-wrapper .title-wrap .p {
   padding-right: 0.5em;
 }
 
-.img-wrapper .title-wrapper .title-wrap .hello {
+.img-wrapper .Htitle-wrapper .title-wrap .hello {
   font-size: 1.2em;
   font-family: "Noto Serif KR", serif;
   padding-bottom: 0.5em;
 }
 
 @media screen and (max-width: 767px) {
-  .img-wrapper .title-wrapper .title-wrap .hello {
+  .img-wrapper .Htitle-wrapper .title-wrap .hello {
     font-size: 2em;
     padding-top: 0.1em;
     padding-bottom: 2em;
@@ -79,60 +83,60 @@
   }
 }
 
-.img-wrapper .title-wrapper .title-wrap .title {
+.img-wrapper .Htitle-wrapper .title-wrap .title {
   display: flex;
   align-items: baseline;
   font-size: 1.5em;
   padding-left: 1em;
 }
 
-.img-wrapper .title-wrapper .title-wrap .title .p2 {
+.img-wrapper .Htitle-wrapper .title-wrap .title .p2 {
   color: #4af1f1;
   font-family: "Noto Serif KR", serif;
 }
 
 @media screen and (max-width: 767px) {
-  .img-wrapper .title-wrapper .title-wrap .title .p2 {
+  .img-wrapper .Htitle-wrapper .title-wrap .title .p2 {
     max-width: 100%;
     font-size: 2.3em;
     padding-bottom: 0.2em;
   }
 }
 
-.img-wrapper .title-wrapper .title-wrap .title .p3 {
+.img-wrapper .Htitle-wrapper .title-wrap .title .p3 {
   font-size: 1.2em;
   font-family: "Noto Sans KR", sans-serif;
 }
 
 @media screen and (max-width: 767px) {
-  .img-wrapper .title-wrapper .title-wrap .title .p3 {
+  .img-wrapper .Htitle-wrapper .title-wrap .title .p3 {
     font-size: 2em;
     padding-left: 2em;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .img-wrapper .title-wrapper .title-wrap .title {
+  .img-wrapper .Htitle-wrapper .title-wrap .title {
     max-width: 100%;
     display: block;
     font-size: 1.5em;
   }
 }
 
-.img-wrapper .title-wrapper .title-wrap .title .p4 {
+.img-wrapper .Htitle-wrapper .title-wrap .title .p4 {
   font-size: 0.9em;
   font-family: "Noto Serif KR", serif;
 }
 
 @media screen and (max-width: 767px) {
-  .img-wrapper .title-wrapper .title-wrap .title .p4 {
+  .img-wrapper .Htitle-wrapper .title-wrap .title .p4 {
     font-size: 1.3em;
     padding-left: 4.1em;
     padding-top: 1em;
   }
 }
 
-.img-wrapper .title-wrapper .title-wrap .p5 {
+.img-wrapper .Htitle-wrapper .title-wrap .p5 {
   font-size: 0.6em;
   padding-left: 5em;
   padding-top: 0.7em;
@@ -140,44 +144,44 @@
 }
 
 @media screen and (max-width: 767px) {
-  .img-wrapper .title-wrapper .title-wrap .p5 {
+  .img-wrapper .Htitle-wrapper .title-wrap .p5 {
     position: absolute;
     bottom: -20em;
   }
 }
 
 @media screen and (max-width: 1700px) {
-  .img-wrapper .title-wrapper {
+  .img-wrapper .Htitle-wrapper {
     font-size: 2.5em;
   }
 }
 
 @media screen and (max-width: 1580px) {
-  .img-wrapper .title-wrapper {
+  .img-wrapper .Htitle-wrapper {
     font-size: 2em;
   }
 }
 
 @media screen and (max-width: 1250px) {
-  .img-wrapper .title-wrapper {
+  .img-wrapper .Htitle-wrapper {
     font-size: 1.5em;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .img-wrapper .title-wrapper {
+  .img-wrapper .Htitle-wrapper {
     font-size: 1.2em;
   }
 }
 
 @media screen and (max-width: 615px) {
-  .img-wrapper .title-wrapper {
+  .img-wrapper .Htitle-wrapper {
     font-size: 1em;
   }
 }
 
 @media screen and (max-width: 515px) {
-  .img-wrapper .title-wrapper {
+  .img-wrapper .Htitle-wrapper {
     display: none;
   }
 }
