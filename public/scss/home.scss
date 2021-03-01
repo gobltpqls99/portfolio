@@ -40,7 +40,6 @@ body {
 					display: flex; align-items: baseline;
 					color: #4af1f1;
 					font-family: $Notof;
-					width: 800px;
 					#typing{ position: relative; display: inline-block; }
 					#typing::after{
 						content: "";
