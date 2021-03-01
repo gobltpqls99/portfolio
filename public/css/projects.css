@@ -18,7 +18,7 @@
 
 .Pcontainer .line {
   width: 0.02em;
-  height: 150%;
+  height: 70em;
   background-color: #4af1f1;
   position: absolute;
   top: 25%;
@@ -32,7 +32,7 @@
   border-radius: 50%;
   background-color: #4af1f1;
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: -0.24em;
   position: relative;
 }
@@ -103,7 +103,7 @@
   border-radius: 50%;
   background-color: #4af1f1;
   position: absolute;
-  top: 68%;
+  top: 74%;
   left: -0.24em;
 }
 
@@ -133,8 +133,7 @@
 
 @media screen and (max-width: 1250px) {
   .Pcontainer .line {
-    top: 30%;
-    height: 320%;
+    height: 190em;
     left: 28%;
   }
   .Pcontainer .line .dot1 {

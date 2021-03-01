@@ -1,6 +1,9 @@
 extends ../layout/default
+block css 
+	link(rel="stylesheet", href="/css/home.css")
+block js 
+	script(src="/js/home.js")
 block content
-
 	.img-wrapper 
 		.Htitle-wrapper
 			.title-wrap 
@@ -8,9 +11,8 @@ block content
 				.h-line
 				.p.hello 안녕하세요
 				.title
-					.p.p2
-						#typing
-						.typing-bar
+					.p.p2 
+						#typing 프론트엔드 개발자
 					.p.p3 이세빈
 						.p.p4 입니다.
 				.p5 Welcome My PROTFOLIO

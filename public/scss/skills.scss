@@ -12,8 +12,14 @@
 		background-color: #4af1f1;
 		margin-right: 0.1em;
 	}
-	// @include original { padding-left: 5em;}
 }
+body {
+	overflow-y: auto;
+	min-width: 100%; min-height: 100%;
+	background-color: #1d1d1d;
+	background: url(../img/p3-2.jpg) no-repeat center center fixed;
+}
+
 .Sbox-wrapper {
 	font-family: $d2;
 	width: 100%; height: 100%;
@@ -163,6 +169,6 @@
 		}
 		.tools { padding-left: 0; }
 	}
-	@include laptop { position: static; margin-top: 10em; margin-left: 20%;}
+	@include laptop { margin-top: 7em; margin-left: -15%;}
 	@include mobile { display: none; }
 }

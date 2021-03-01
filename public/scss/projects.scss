@@ -16,14 +16,14 @@
 		}
 	}
 	.line {
-		width: 0.02em; height: 150%;
+		width: 0.02em; height: 70em;
 		background-color: #4af1f1;
 		position: absolute; top: 25%; left: 26.5%;
 		.dot1 {
 			color: #dedede;
 			width: 10px; height: 10px; border-radius: 50%;
 			background-color: #4af1f1;
-			position: absolute; top: 15%; left: -0.24em;
+			position: absolute; top: 10%; left: -0.24em;
 			position: relative;
 			.html {
 				width: 300px; color: #dedede;
@@ -60,7 +60,7 @@
 			color: #dedede;
 			width: 10px; height: 10px; border-radius: 50%;
 			background-color: #4af1f1;
-			position: absolute; top: 68%; left: -0.24em;
+			position: absolute; top: 74%; left: -0.24em;
 			.vue {
 				width: 300px; color: #dedede;
 				font-size: 1.3em; font-family: $d2;
@@ -77,8 +77,7 @@
 	}
 	@include desktopS {
 		.line {
-			top: 30%;
-			height: 320%;
+			height: 190em;
 			left: 28%;
 			.dot1 {
 				top: 8em;

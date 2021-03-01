@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const app = express();
 const path = require('path');
+const { default: Typed } = require("typed.js");
 
 app.listen(process.env.PORT, () => {
 	console.log('=====================');
