@@ -1,6 +1,9 @@
 extends ../layout/default
 block css 
 	link(rel="stylesheet", href="/css/projects.css")
+	//- link(rel="stylesheet", href="/css/animate3.min.css")
+block js 
+	script(src="/js/wow.min.js") 
 block content
 	.Pcontainer
 		.Ptitle-wrapper
@@ -11,18 +14,33 @@ block content
 				.html html / css / javascript
 					.Pbox-wrapper
 						a(href="https://sb904-ella.web.app/html/index.html")
-							img(src="", alt="")
+							.cover ELLA 쇼핑몰
+							img(src="/img/ella.png", alt="")
 						a(href="")
+							.cover 날씨 앱
+							img(src="/img/weather.png", alt="")
 						a(href="")
+							.cover 
+							img(src="/img/1-1.jpg", alt="")
 			.dot2 
 				.node node.js
 					.Pbox-wrapper
 						a(href="https://sb904-note.firebaseapp.com/html/index.html")
+							.cover TODO-APP
+							img(src="/img/todoapp.png", alt="") 
 						a(href="")
+							.cover 
+							img(src="/img/es6.png", alt="") 
 						a(href="")
+							.cover 
+							img(src="/img/jquery.png", alt="") 
 			.dot3 
 				.vue react / vue
 					.Pbox-wrapper
 						a(href="https://sb904-vue-weather.firebaseapp.com/")
+							.cover Vue-Weather
+							img(src="/img/vue-weather.png", alt="") 
 						a(href="")
+							.cover 
 						a(href="")
+							.cover 

@@ -19,6 +19,16 @@ function blink() {
 setInterval(blink, 500);
 
 
+// var str = "프론트엔드 개발자";
+// var c = 0;
+
+// setInterval(function() {
+//     if(c<10)
+//         $('#typing').append(str[c]);
+//         c++;
+// }, 300);
+
+
 // var options = {
 //     strings: ["프론트엔드 개발자", "웹 개발자", "웹 퍼블리셔"],
 //     typeSpeed: 40,
