@@ -3,39 +3,34 @@ let stringArr = ["웹 개발자", "프론트엔드 개발자", "웹 퍼블리셔
 let selectString = stringArr[Math.floor(Math.random() * stringArr.length)];
 let selectStringArr = selectString.split("");
 
-function typing(randomArr) {
-    if(randomArr.length > 0){
-        target.textContent += randomArr.shift();
-        setTimeout(function(){
-            typing(randomArr);
-        }, 300); 
-    }
-}
-typing(selectStringArr);
-
 function blink() {
     target.classList.toggle("active");
 }
 setInterval(blink, 500);
 
 
-// var str = "프론트엔드 개발자";
-// var c = 0;
-
-// setInterval(function() {
-//     if(c<10)
-//         $('#typing').append(str[c]);
-//         c++;
-// }, 300);
 
 
-// var options = {
-//     strings: ["프론트엔드 개발자", "웹 개발자", "웹 퍼블리셔"],
-//     typeSpeed: 40,
-//     backSpeed: 100,
-//     fadeOut: false,
-//     smartBackspace: true,
-//     cursorChar: '_',
-//     loop: true
-// };
-// var typed = new Typed('#typing', options);
+
+var typingInterval = null;
+var typing = ['개발자', '프론트엔드 개발자', '백엔드 개발자', '웹 퍼블리셔'];
+var typingIdx = 0;
+var $span = $('#typing')
+
+typingInterval = setInterval(onInterval, 150);
+function onInterval() {
+	var spanLen = $span.text().length;
+	var typingLen = typing[typingIdx].length
+
+	if(spanLen == typingLen) {
+		clearInterval(typingInterval);
+		setTimeout(function(){
+			$span.html('&nbsp;');
+			typingIdx = typingIdx == typing.length - 1 ? 0 : typingIdx + 1;
+			typingInterval = setInterval(onInterval, 150);
+		}, 2000)
+	}
+	else {
+		$span.text( typing[typingIdx].substr(0, spanLen + 1) )
+	}
+}
