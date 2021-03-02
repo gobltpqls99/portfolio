@@ -10,8 +10,9 @@
 			transition: all .6s;
 			width: 100%; height: 100%;
 			position: absolute; transform: translateY(300px);
-			font-family: $Notos; font-size: 0.8em;
+			font-family: $d2; font-size: 1em;
 			color: #eeeeee; text-align: center; padding-top: 28%;
+			div { font-family: $Notos; padding-top: 1em; font-size: 0.7em;}
 		}
 	}
 	a:hover {
@@ -42,7 +43,7 @@
 			position: relative;
 			.html {
 				width: 300px; color: #dedede;
-				font-size: 1.3em; font-family: $d2;
+				font-size: 1.5em; font-family: $d2;
 				position: absolute; top: -30%; left: 1.8em;
 				.Pbox-wrapper{
 					position: absolute; top: 2em; left: 0;
@@ -57,7 +58,7 @@
 			position: absolute; top: 42%; left: -0.24em;
 			.node {
 				width: 300px; color: #dedede;
-				font-size: 1.3em; font-family: $d2;
+				font-size: 1.5em; font-family: $d2;
 				position: absolute; top: -30%; left: 1.8em;
 				.Pbox-wrapper{
 					position: absolute; top: 2em; left: 0;
@@ -72,7 +73,7 @@
 			position: absolute; top: 74%; left: -0.24em;
 			.vue {
 				width: 300px; color: #dedede;
-				font-size: 1.3em; font-family: $d2;
+				font-size: 1.5em; font-family: $d2;
 				position: absolute; top: -30%; left: 1.8em;
 				.Pbox-wrapper{
 					position: absolute; top: 2em; left: 0;
@@ -83,7 +84,7 @@
 	}
 	@include desktopS {
 		.line {
-			height: 190em;
+			height: 170em;
 			left: 28%;
 			.dot1 {
 				top: 8em;
@@ -94,7 +95,7 @@
 				}
 			}
 			.dot2 {
-				top: 60em;
+				top: 62em;
 				.node {
 					.Pbox-wrapper{ top: 1.2em; flex-direction: column;
 						a { margin: 1em 0; }
@@ -102,7 +103,7 @@
 				}
 			}
 			.dot3 {
-				top: 113em;
+				top: 120em;
 				.vue {
 					.Pbox-wrapper{ top: 1.2em;  flex-direction: column;
 						a { margin: 1em 0; }

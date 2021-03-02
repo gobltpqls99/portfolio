@@ -18,11 +18,17 @@
   height: 100%;
   position: absolute;
   transform: translateY(300px);
-  font-family: "Noto Sans KR", sans-serif;
-  font-size: 0.8em;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 1em;
   color: #eeeeee;
   text-align: center;
   padding-top: 28%;
+}
+
+.Pcontainer a .cover div {
+  font-family: "Noto Sans KR", sans-serif;
+  padding-top: 1em;
+  font-size: 0.7em;
 }
 
 .Pcontainer a:hover .cover {
@@ -72,7 +78,7 @@
 .Pcontainer .line .dot1 .html {
   width: 300px;
   color: #dedede;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Nanum Gothic Coding", monospace;
   position: absolute;
   top: -30%;
@@ -100,7 +106,7 @@
 .Pcontainer .line .dot2 .node {
   width: 300px;
   color: #dedede;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Nanum Gothic Coding", monospace;
   position: absolute;
   top: -30%;
@@ -128,7 +134,7 @@
 .Pcontainer .line .dot3 .vue {
   width: 300px;
   color: #dedede;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-family: "Nanum Gothic Coding", monospace;
   position: absolute;
   top: -30%;
@@ -144,7 +150,7 @@
 
 @media screen and (max-width: 1250px) {
   .Pcontainer .line {
-    height: 190em;
+    height: 170em;
     left: 28%;
   }
   .Pcontainer .line .dot1 {
@@ -158,7 +164,7 @@
     margin: 1em 0;
   }
   .Pcontainer .line .dot2 {
-    top: 60em;
+    top: 62em;
   }
   .Pcontainer .line .dot2 .node .Pbox-wrapper {
     top: 1.2em;
@@ -168,7 +174,7 @@
     margin: 1em 0;
   }
   .Pcontainer .line .dot3 {
-    top: 113em;
+    top: 120em;
   }
   .Pcontainer .line .dot3 .vue .Pbox-wrapper {
     top: 1.2em;
