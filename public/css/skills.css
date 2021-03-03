@@ -21,7 +21,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   background-color: #1d1d1d;
-  background: url(../img/p3-2.jpg) no-repeat center center fixed;
+  background: url(../img/p3-2.jpg) center center fixed;
 }
 
 .Sbox-wrapper {
@@ -57,20 +57,20 @@ body {
 }
 
 .Sbox-wrapper .frameworks .s-line {
-  width: 2.3em;
+  width: 60px;
   height: 0.02em;
   opacity: .5;
   background-color: #dedede;
   position: absolute;
   top: 80%;
-  left: -12.55%;
+  left: -13.7%;
 }
 
 .Sbox-wrapper .frameworks .img-box img {
   margin: 0.7em 1em;
 }
 
-.Sbox-wrapper .frontend {
+.Sbox-wrapper .frameworks .frontend {
   text-align: left;
   width: 350px;
   height: 300px;
@@ -79,16 +79,16 @@ body {
   padding-top: 1em;
   padding-left: 1em;
   position: absolute;
-  left: -23.4%;
-  top: 40%;
+  left: -92%;
+  top: 50%;
 }
 
-.Sbox-wrapper .frontend .img-box {
+.Sbox-wrapper .frameworks .frontend .img-box {
   padding-left: 0.8em;
   padding-top: 0.7em;
 }
 
-.Sbox-wrapper .frontend .img-box div {
+.Sbox-wrapper .frameworks .frontend .img-box div {
   width: 70px;
   height: 70px;
   display: inline-block;
@@ -98,11 +98,11 @@ body {
   padding-top: 0.9em;
 }
 
-.Sbox-wrapper .frontend .img-box img {
+.Sbox-wrapper .frameworks .frontend .img-box img {
   margin: 0.5em 0.8em;
 }
 
-.Sbox-wrapper .backend {
+.Sbox-wrapper .frameworks .backend {
   text-align: center;
   width: 250px;
   height: 230px;
@@ -110,12 +110,12 @@ body {
   border: 1px solid #dedede;
   padding-top: 1em;
   position: absolute;
-  right: 56.1%;
+  left: 25%;
   top: 27%;
 }
 
-.Sbox-wrapper .backend .s-line {
-  width: 2.75em;
+.Sbox-wrapper .frameworks .backend .s-line {
+  width: 60px;
   height: 0.02em;
   opacity: .5;
   background-color: #dedede;
@@ -124,17 +124,17 @@ body {
   left: -27%;
 }
 
-.Sbox-wrapper .backend .img-box img {
+.Sbox-wrapper .frameworks .backend .img-box img {
   margin: 0.5em 0.5em;
 }
 
-.Sbox-wrapper .backend .img-box div {
+.Sbox-wrapper .frameworks .backend .img-box div {
   display: inline-block;
   font-family: "Noto Sans KR", sans-serif;
   font-size: 0.8em;
 }
 
-.Sbox-wrapper .tools {
+.Sbox-wrapper .frameworks .tools {
   text-align: left;
   width: 250px;
   height: 200px;
@@ -147,9 +147,9 @@ body {
   bottom: 11.8%;
 }
 
-.Sbox-wrapper .tools .s-line {
+.Sbox-wrapper .frameworks .tools .s-line {
   width: 0.02em;
-  height: 1.2em;
+  height: 60px;
   opacity: .5;
   background-color: #dedede;
   position: absolute;
@@ -157,17 +157,17 @@ body {
   left: 7%;
 }
 
-.Sbox-wrapper .tools .img-box {
+.Sbox-wrapper .frameworks .tools .img-box {
   text-align: center;
   padding-top: 0.8em;
   margin-right: 1em;
 }
 
-.Sbox-wrapper .tools .img-box img {
+.Sbox-wrapper .frameworks .tools .img-box img {
   margin: 0.5em 0.5em;
 }
 
-.Sbox-wrapper .design {
+.Sbox-wrapper .frameworks .design {
   text-align: center;
   width: 280px;
   height: 200px;
@@ -179,8 +179,8 @@ body {
   bottom: 5%;
 }
 
-.Sbox-wrapper .design .s-line {
-  width: 1.85em;
+.Sbox-wrapper .frameworks .design .s-line {
+  width: 60px;
   height: 0.05em;
   opacity: .5;
   background-color: #dedede;
@@ -189,60 +189,54 @@ body {
   right: -17%;
 }
 
-.Sbox-wrapper .design .img-box {
+.Sbox-wrapper .frameworks .design .img-box {
   padding-top: 1em;
 }
 
-.Sbox-wrapper .design .img-box img {
+.Sbox-wrapper .frameworks .design .img-box img {
   margin: 0.5em 0.3em;
 }
 
-@media screen and (max-width: 1700px) {
-  .Sbox-wrapper .s-line {
-    display: none;
-  }
-}
-
 @media screen and (max-width: 1199px) {
-  .Sbox-wrapper .frameworks .s-line {
+  .Sbox-wrapper .frameworks .frameworks .s-line {
     display: none;
   }
-  .Sbox-wrapper .frontend, .Sbox-wrapper .backend, .Sbox-wrapper .tools, .Sbox-wrapper .design {
+  .Sbox-wrapper .frameworks .frontend, .Sbox-wrapper .frameworks .backend, .Sbox-wrapper .frameworks .tools, .Sbox-wrapper .frameworks .design {
     position: static;
     margin-top: 2em;
     text-align: center;
     width: 450px;
   }
-  .Sbox-wrapper .frontend .img-box, .Sbox-wrapper .backend .img-box, .Sbox-wrapper .tools .img-box, .Sbox-wrapper .design .img-box {
+  .Sbox-wrapper .frameworks .frontend .img-box, .Sbox-wrapper .frameworks .backend .img-box, .Sbox-wrapper .frameworks .tools .img-box, .Sbox-wrapper .frameworks .design .img-box {
     padding-top: 1.5em;
     padding-left: 0;
   }
-  .Sbox-wrapper .frontend .s-line, .Sbox-wrapper .backend .s-line, .Sbox-wrapper .tools .s-line, .Sbox-wrapper .design .s-line {
+  .Sbox-wrapper .frameworks .frontend .s-line, .Sbox-wrapper .frameworks .backend .s-line, .Sbox-wrapper .frameworks .tools .s-line, .Sbox-wrapper .frameworks .design .s-line {
     display: none;
   }
-  .Sbox-wrapper .frontend {
+  .Sbox-wrapper .frameworks .frontend {
     padding-left: 0;
     padding-top: 1.5em;
     height: 300px;
   }
-  .Sbox-wrapper .frontend .img-box img {
+  .Sbox-wrapper .frameworks .frontend .img-box img {
     width: 60px;
     margin: 0.5em;
   }
-  .Sbox-wrapper .tools {
+  .Sbox-wrapper .frameworks .tools {
     padding-left: 0;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .Sbox-wrapper {
+  .Sbox-wrapper .frameworks {
     margin-top: 7em;
     margin-left: -15%;
   }
 }
 
 @media screen and (max-width: 615px) {
-  .Sbox-wrapper {
+  .Sbox-wrapper .frameworks {
     display: none;
   }
 }

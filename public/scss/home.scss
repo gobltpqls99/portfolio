@@ -8,95 +8,82 @@ body {
 .img-wrapper {
 	width: 100%; height: 100%;
 	overflow: hidden;
-	background: url(../img/1-2.jpg) no-repeat center center fixed;
+	background: url(../img/1-2.jpg) center center fixed;
 	position: absolute; top: 0; left: 70px;
 	.Htitle-wrapper {
 		color: #dedede;
 		font-size: 3em;
 		position: absolute; top: 45%; left: 43%;
 		transform: translate(-43%, -45%);
-		width: 57%;
+		width: 100%;
 		.title-wrap {
+			width: 57%;
+			margin: 0 auto;
 			position: relative;
 			.box {
 				width: 0.2em; height: 1.2em; background-color: #4af1f1; position: absolute; left: -1.7%; top: 1.5%;
-				@include tablet { top: 0%; }
-			}
-			.h-line {
-				width: 200%; height: 0.02em; background-color: #4af1f1; position: absolute; left: 75%; top: 50%;
-				@include desktopM { left: 60%; }
-				@include tablet { top: 28%; left: -30%; }
 			}
 			.hello {
 				font-size: 1.2em;
 				font-family: $Notof;
 				padding-bottom: 0.5em;
 			}
-			.title {
-				font-size: 1.5em;
-				padding-left: 1em;
-				.p { padding-left: 0.5em; }
-				.p2 {
-					display: flex; align-items: baseline;
-					color: #4af1f1;
-					font-family: $Notof;
-					#typing{ position: relative; display: inline-block; }
-					#typing::after{
-						content: "";
-						display: block;
-						position: absolute; top: 0; right: -10px; width: 4px; height: 100%;
-						background-color: #dedede;
-					}
-					#typing.active::after{ display: none; }
-					@include tablet { text-align: center;}
+			@include desktopM1 { width: 100%; font-size: 0.8em; margin-left: 15%; }
+		}
+		.title {
+			margin: 0 auto; width: 100%;
+			padding-left: 1em;
+			.p { padding-left: 0.5em; }
+			.p2 {
+				font-size: 1.4em;
+				padding-left: 0;
+				display: flex; align-items: center;
+				color: #4af1f1;
+				font-family: $Notof;
+				#typing{ text-align: right; width: 100%; position: relative; }
+				#typing::after{
+					content: "";
+					display: block;
+					position: absolute; top: 0; right: -10px; width: 4px; height: 100%;
+					background-color: #dedede;
 				}
+				#typing.active::after{ display: none; }
+				.h-line {
+					width: 80%; height: 0.02em;
+					background-color: #4af1f1;
+					margin-left: 0.7em;
+				}
+				@include desktop { font-size: 1em; }
+			}
+			.name {
+				display: flex; align-items: baseline;
+				font-size: 0.9em; 
+				margin-left: 55%;
 				.p3 {
+					// position: absolute; top: 150px; right: 550px;
 					max-width: 100%;
-					display: flex; align-items: baseline;
 					margin-top: 0.7em;
-					margin-left: 10em;
-					font-size: 0.7em;
 					font-family: $Notos;
-					.p4 {
-						max-width: 100%;
-						font-size: 0.9em;
-						font-family: $Notof;
-					}
-					@include tablet {
-						width: 400px;
-						padding-left: 3em;
-						margin-left: 0;
-					}
 				}
-				@include tablet {
-					margin-top: 1em;
-					font-size: 2.5em;
-					padding-left: 0;
-				}
+				.p4 { max-width: 100%; font-family: $Notof; }
 			}
-			.p5 {
-				font-size: 0.4em;
-				position: absolute; left: 50%; bottom: -35%;
-				transform: translateX(-50%);
+			@include desktopM1 {
+				font-size: 0.8em;
 			}
 		}
-		@include desktopL {
+		.p5 {
+			font-size: 0.3em;
+			position: absolute; left: 50%; bottom: -35%;
+			transform: translateX(-50%);
+		}
+		@include tablet {
 			font-size: 2.5em;
-		}
-		@include desktopM {
-			font-size: 2em;
-		}
-		@include desktopS {
-			font-size: 1.5em;
-		}
-		@include laptop {
-			font-size: 1em;
-		}
-		@include mobile {
-			font-size: 1em;
-		}
-		@include mobileS {
-			display: none;
+			.title-wrap { margin-left: 40%; }
+			.title {
+				.p2 {margin: 0.5em 0;}
+				.name { margin-left: 35%; }
+			}
+			.p5 { bottom: -70%; font-size: 0.3em;}
 		}
 	}
 }
