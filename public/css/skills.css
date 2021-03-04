@@ -83,6 +83,14 @@ body {
   top: 50%;
 }
 
+.Sbox-wrapper .frameworks .frontend .s-line {
+  position: absolute;
+  width: 0.02em;
+  height: 40px;
+  top: 300px;
+  left: 330px;
+}
+
 .Sbox-wrapper .frameworks .frontend .img-box {
   padding-left: 0.8em;
   padding-top: 0.7em;
@@ -110,18 +118,18 @@ body {
   border: 1px solid #dedede;
   padding-top: 1em;
   position: absolute;
-  left: 25%;
-  top: 27%;
+  left: 110%;
+  top: 20%;
 }
 
 .Sbox-wrapper .frameworks .backend .s-line {
-  width: 60px;
+  width: 45px;
   height: 0.02em;
   opacity: .5;
   background-color: #dedede;
   position: absolute;
-  top: 10%;
-  left: -27%;
+  top: 50px;
+  left: -45px;
 }
 
 .Sbox-wrapper .frameworks .backend .img-box img {
@@ -143,8 +151,8 @@ body {
   padding-top: 1em;
   padding-left: 1em;
   position: absolute;
-  left: 22%;
-  bottom: 11.8%;
+  left: 85%;
+  bottom: -69%;
 }
 
 .Sbox-wrapper .frameworks .tools .s-line {
@@ -153,7 +161,7 @@ body {
   opacity: .5;
   background-color: #dedede;
   position: absolute;
-  top: -15%;
+  top: -30%;
   left: 7%;
 }
 
@@ -175,18 +183,18 @@ body {
   border: 1px solid #dedede;
   padding-top: 1em;
   position: absolute;
-  left: 3.3%;
-  bottom: 5%;
+  left: 7%;
+  bottom: -65%;
 }
 
 .Sbox-wrapper .frameworks .design .s-line {
-  width: 60px;
-  height: 0.05em;
+  width: 112px;
+  height: 0.02em;
   opacity: .5;
   background-color: #dedede;
   position: absolute;
-  top: 40%;
-  right: -17%;
+  top: 53%;
+  left: -40.7%;
 }
 
 .Sbox-wrapper .frameworks .design .img-box {
@@ -195,6 +203,12 @@ body {
 
 .Sbox-wrapper .frameworks .design .img-box img {
   margin: 0.5em 0.3em;
+}
+
+@media screen and (max-width: 1700px) {
+  .Sbox-wrapper .frameworks .s-line {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 1199px) {
