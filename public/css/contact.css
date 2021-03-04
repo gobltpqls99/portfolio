@@ -88,8 +88,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .con-wrapper .text-wrapper {
-    font-size: 1em;
-    margin-left: 10px;
+    font-size: 0.9em;
+    margin-left: 70px;
   }
 }
 
@@ -130,13 +130,20 @@ body {
 }
 
 .con-wrapper .contact-container .p {
+  width: 100%;
   padding: 0.5em 2em;
   font-size: 0.7em;
+  display: block;
+}
+
+.con-wrapper .contact-container .cell-phone {
+  margin-bottom: 3em;
 }
 
 @media screen and (max-width: 767px) {
   .con-wrapper .contact-container {
     font-size: 1.3em;
+    left: 170px;
   }
 }
 

@@ -48,7 +48,7 @@ body {
         }
       }
     }
-    @include tablet { font-size: 1em; margin-left: 10px;  }
+    @include tablet { font-size: 0.9em; margin-left: 70px; }
     @include mobileS { display: none; }
   }
   .contact-container {
@@ -68,8 +68,9 @@ body {
         }
       }
     }
-    .p { padding: 0.5em 2em; font-size: 0.7em; }
-    @include tablet { font-size: 1.3em; }
+    .p { width: 100%; padding: 0.5em 2em; font-size: 0.7em; display: block;}
+    .cell-phone { margin-bottom: 3em; }
+    @include tablet { font-size: 1.3em; left: 170px; }
     @include mobileS { display: none; }
   }
 }
