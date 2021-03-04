@@ -1,47 +1,52 @@
 extends ../layout/default
 block css 
 	link(rel="stylesheet", href="/css/projects.css")
-	//- link(rel="stylesheet", href="/css/animate3.min.css")
-block js 
-	script(src="/js/wow.min.js") 
 block content
 	.Pcontainer
 		.Ptitle-wrapper
 			.color 
 			.main-title Projects
 		.line
+		.dot1-wrap
 			.dot1 
-				.html html / css / javascript
-					.Pbox-wrapper
-						a(href="https://sb904-ella.web.app/html/index.html")
-							.cover ELLA 쇼핑몰
-								div 2021.02.23~2021.03.02
-							img(src="/img/ella.png", alt="")
-						a(href="")
-							.cover 날씨 앱
-							img(src="/img/weather.png", alt="")
-						a(href="")
-							.cover 
-							img(src="/img/1-1.jpg", alt="")
+			.html html / css / javascript
+				.Pbox-wrapper
+					a(href="")
+						.cover 반응형 페이지
+						img(src="/img/mal.png", alt="")
+					a(href="")
+						.cover js 슬라이드 제작
+						img(src="/img/ottogi.png", alt="")
+					a(href="")
+						.cover Mouse Wheel 반응형
+						img(src="/img/MouseWheel.png", alt="")
+					a(href="https://sb904-ella.web.app/html/index.html")
+						.cover ELLA 쇼핑몰
+							div 2021.02.23~2021.03.02
+						img(src="/img/ella.png", alt="")
+					a(href="")
+						.cover GOYA
+						img(src="/img/goya.png", alt="")
+					a(href="https://sb904-weather.web.app/")
+						.cover 날씨 앱
+						img(src="/img/weather.png", alt="")
+		.dot2-wrap
 			.dot2 
-				.node node.js
-					.Pbox-wrapper
-						a(href="https://sb904-note.firebaseapp.com/html/index.html")
-							.cover TODO-APP
-							img(src="/img/todoapp.png", alt="") 
-						a(href="")
-							.cover 
-							img(src="/img/es6.png", alt="") 
-						a(href="")
-							.cover 
-							img(src="/img/jquery.png", alt="") 
+			.node node.js
+				.Pbox-wrapper
+					a(href="https://sb904-note.firebaseapp.com/html/index.html")
+						.cover TODO-APP
+						img(src="/img/todoapp.png", alt="") 
+					a(href="")
+						.cover 
+						img(src="/img/es6.png", alt="") 
+		.dot3-wrap
 			.dot3 
-				.vue react / vue
-					.Pbox-wrapper
-						a(href="https://sb904-vue-weather.firebaseapp.com/")
-							.cover Vue-Weather
-							img(src="/img/vue-weather.png", alt="") 
-						a(href="")
-							.cover 
-						a(href="")
-							.cover 
+			.vue react / vue
+				.Pbox-wrapper
+					a(href="https://sb904-vue-weather.firebaseapp.com/")
+						.cover Vue-Weather
+						img(src="/img/vue-weather.png", alt="") 
+					a(href="")
+						.cover Vue-Weather
+						img(src="/img/vue-weather.png", alt="") 

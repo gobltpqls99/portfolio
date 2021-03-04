@@ -12,6 +12,7 @@
 		background-color: #4af1f1;
 		margin-right: 0.1em;
 	}
+	@include tablet { left: 120px; }
 }
 body {
 	overflow-y: auto;
@@ -54,7 +55,7 @@ body {
 		}
 		.frontend {
 			text-align: left;
-			width: 350px; height: 300px;
+			width: 350px; height: 330px;
 			background: rgba(255, 255, 255, 0.23);
 			border: 1px solid #dedede;
 			padding-top: 1em;
@@ -62,8 +63,8 @@ body {
 			position: absolute;
 			left: -92%; top: 50%;
 			.s-line {
-				position: absolute; width: 0.02em; height: 40px;
-				top: 300px; left: 330px;
+				position: absolute; width: 0.02em; height: 30px;
+				top: 329px; left: 330px;
 			}
 			.img-box {
 				padding-left: 0.8em;
@@ -131,14 +132,13 @@ body {
 			width: 280px; height: 200px;
 			background: rgba(255, 255, 255, 0.23);
 			border: 1px solid #dedede;
-			padding-top: 1em;
-			position: absolute;
+			padding-top: 1em; position: absolute;
 			left: 7%; bottom: -65%;
 			.s-line {
 				width: 112px; height: 0.02em;
 				opacity: .5;
 				background-color: #dedede;
-				position: absolute; top: 53%; left: -40.7%;
+				position: absolute; top: 123px; left: -112px;
 			}
 			.img-box {
 				padding-top: 1em;
@@ -164,13 +164,18 @@ body {
 				.s-line { display: none; }
 			}
 			.frontend {
-				padding-left: 0; padding-top: 1.5em;
-				height: 300px;
+				padding-left: 0; height: 300px;
 				.img-box { img { width: 60px; margin: 0.5em;} }
 			}
 			.tools { padding-left: 0; }
 		}
-		@include laptop { margin-top: 300px; margin-left: -20%; transition: all .5s;}
+		@include laptop {
+			.frameworks {
+				width: 70%;
+				.frontend, .backend, .tools, .design { width: 70%; }
+			}
+			margin-top: 300px; margin-left: -20%; transition: all .5s; margin-bottom: 5em;
+		}
 		@include mobile { display: none; }
 	}
 }

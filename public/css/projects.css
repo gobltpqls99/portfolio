@@ -1,39 +1,3 @@
-.Pcontainer a {
-  width: 300px;
-  margin-right: 2em;
-  position: relative;
-  overflow: hidden;
-}
-
-.Pcontainer a img {
-  width: 100%;
-}
-
-.Pcontainer a .cover {
-  background: rgba(1, 1, 1, 0.4);
-  transition: all .6s;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  transform: translateY(300px);
-  font-family: "Nanum Gothic Coding", monospace;
-  font-size: 1em;
-  color: #eeeeee;
-  text-align: center;
-  padding-top: 28%;
-}
-
-.Pcontainer a .cover div {
-  font-family: "Noto Sans KR", sans-serif;
-  padding-top: 1em;
-  font-size: 0.7em;
-}
-
-.Pcontainer a:hover .cover {
-  transform: translateY(0);
-  opacity: 1;
-}
-
 .Pcontainer .Ptitle-wrapper {
   position: absolute;
   top: 12%;
@@ -52,135 +16,298 @@
   margin-right: 0.1em;
 }
 
+@media screen and (max-width: 767px) {
+  .Pcontainer .Ptitle-wrapper {
+    left: 120px;
+  }
+}
+
 .Pcontainer .line {
-  width: 0.02em;
-  height: 70em;
+  width: 0.0125em;
+  height: 100em;
   background-color: #4af1f1;
   position: absolute;
-  top: 25%;
-  left: 26.5%;
+  left: 20%;
+  top: 230px;
 }
 
-.Pcontainer .line .dot1 {
-  color: #dedede;
-  width: 10px;
-  height: 10px;
+@media screen and (max-width: 1430px) {
+  .Pcontainer .line {
+    height: 150em;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .Pcontainer .line {
+    height: 240em;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .Pcontainer .line {
+    display: none;
+  }
+}
+
+.Pcontainer .dot1-wrap {
+  display: block;
+  font-size: 1.5em;
+  width: 80%;
+  color: #eee;
+  position: absolute;
+  top: 35%;
+  left: 19.75%;
+}
+
+.Pcontainer .dot1-wrap .dot1 {
+  width: 0.5em;
+  height: 0.5em;
   border-radius: 50%;
   background-color: #4af1f1;
-  position: absolute;
-  top: 10%;
-  left: -0.24em;
+}
+
+.Pcontainer .dot1-wrap .html {
+  width: 100%;
+  font-family: "Nanum Gothic Coding", monospace;
+  margin-left: 2.5em;
+}
+
+.Pcontainer .dot1-wrap .html .Pbox-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.3em;
+}
+
+.Pcontainer .dot1-wrap .html .Pbox-wrapper a {
+  width: 320px;
+  margin-right: 2em;
   position: relative;
+  overflow: hidden;
+  margin-top: 1.2em;
+  transition: all 1s;
 }
 
-.Pcontainer .line .dot1 .html {
-  width: 300px;
-  color: #dedede;
-  font-size: 1.5em;
+.Pcontainer .dot1-wrap .html .Pbox-wrapper a img {
+  width: 100%;
+}
+
+.Pcontainer .dot1-wrap .html .Pbox-wrapper a .cover {
+  background: rgba(1, 1, 1, 0.4);
+  transition: all .8s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(450px);
   font-family: "Nanum Gothic Coding", monospace;
-  position: absolute;
-  top: -30%;
-  left: 1.8em;
+  font-size: 1em;
+  color: #eeeeee;
+  text-align: center;
+  padding-top: 28%;
 }
 
-.Pcontainer .line .dot1 .html .Pbox-wrapper {
-  position: absolute;
-  top: 2em;
-  left: 0;
-  display: flex;
-}
-
-.Pcontainer .line .dot2 {
-  color: #dedede;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #4af1f1;
-  position: absolute;
-  top: 42%;
-  left: -0.24em;
-}
-
-.Pcontainer .line .dot2 .node {
-  width: 300px;
-  color: #dedede;
-  font-size: 1.5em;
-  font-family: "Nanum Gothic Coding", monospace;
-  position: absolute;
-  top: -30%;
-  left: 1.8em;
-}
-
-.Pcontainer .line .dot2 .node .Pbox-wrapper {
-  position: absolute;
-  top: 2em;
-  left: 0;
-  display: flex;
-}
-
-.Pcontainer .line .dot3 {
-  color: #dedede;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #4af1f1;
-  position: absolute;
-  top: 74%;
-  left: -0.24em;
-}
-
-.Pcontainer .line .dot3 .vue {
-  width: 300px;
-  color: #dedede;
-  font-size: 1.5em;
-  font-family: "Nanum Gothic Coding", monospace;
-  position: absolute;
-  top: -30%;
-  left: 1.8em;
-}
-
-.Pcontainer .line .dot3 .vue .Pbox-wrapper {
-  position: absolute;
-  top: 2em;
-  left: 0;
-  display: flex;
+.Pcontainer .dot1-wrap .html .Pbox-wrapper a .cover div {
+  font-family: "Noto Sans KR", sans-serif;
+  padding-top: 1em;
+  font-size: 0.7em;
 }
 
 @media screen and (max-width: 1250px) {
-  .Pcontainer .line {
-    height: 170em;
-    left: 28%;
+  .Pcontainer .dot1-wrap .html .Pbox-wrapper a {
+    width: 400px;
   }
-  .Pcontainer .line .dot1 {
-    top: 8em;
+}
+
+.Pcontainer .dot1-wrap .html .Pbox-wrapper a:hover .cover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 680px) {
+  .Pcontainer .dot1-wrap {
+    display: none;
   }
-  .Pcontainer .line .dot1 .html .Pbox-wrapper {
-    transition: all .5s;
-    top: 1.2em;
-    flex-direction: column;
+}
+
+.Pcontainer .dot2-wrap {
+  font-size: 1.5em;
+  width: 80%;
+  color: #eee;
+  position: absolute;
+  top: 110%;
+  left: 19.75%;
+}
+
+.Pcontainer .dot2-wrap .dot2 {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #4af1f1;
+}
+
+.Pcontainer .dot2-wrap .node {
+  width: 100%;
+  font-family: "Nanum Gothic Coding", monospace;
+  margin-left: 2.5em;
+}
+
+.Pcontainer .dot2-wrap .node .Pbox-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.3em;
+}
+
+.Pcontainer .dot2-wrap .node .Pbox-wrapper a {
+  width: 320px;
+  margin-right: 2em;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.2em;
+  transition: all 1s;
+}
+
+.Pcontainer .dot2-wrap .node .Pbox-wrapper a img {
+  width: 100%;
+}
+
+.Pcontainer .dot2-wrap .node .Pbox-wrapper a .cover {
+  background: rgba(1, 1, 1, 0.4);
+  transition: all .8s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(450px);
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 1em;
+  color: #eeeeee;
+  text-align: center;
+  padding-top: 28%;
+}
+
+.Pcontainer .dot2-wrap .node .Pbox-wrapper a .cover div {
+  font-family: "Noto Sans KR", sans-serif;
+  padding-top: 1em;
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 1250px) {
+  .Pcontainer .dot2-wrap .node .Pbox-wrapper a {
+    width: 400px;
   }
-  .Pcontainer .line .dot1 .html .Pbox-wrapper a {
-    margin: 1em 0;
+}
+
+.Pcontainer .dot2-wrap .node .Pbox-wrapper a:hover .cover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 1430px) {
+  .Pcontainer .dot2-wrap {
+    top: 150%;
   }
-  .Pcontainer .line .dot2 {
-    top: 62em;
+}
+
+@media screen and (max-width: 1199px) {
+  .Pcontainer .dot2-wrap {
+    top: 245%;
   }
-  .Pcontainer .line .dot2 .node .Pbox-wrapper {
-    top: 1.2em;
-    flex-direction: column;
+}
+
+@media screen and (max-width: 680px) {
+  .Pcontainer .dot2-wrap {
+    display: none;
   }
-  .Pcontainer .line .dot2 .node .Pbox-wrapper a {
-    margin: 1em 0;
+}
+
+.Pcontainer .dot3-wrap {
+  font-size: 1.5em;
+  width: 80%;
+  color: #eee;
+  position: absolute;
+  top: 155%;
+  left: 19.75%;
+}
+
+.Pcontainer .dot3-wrap .dot3 {
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #4af1f1;
+}
+
+.Pcontainer .dot3-wrap .vue {
+  width: 100%;
+  font-family: "Nanum Gothic Coding", monospace;
+  margin-left: 2.5em;
+}
+
+.Pcontainer .dot3-wrap .vue .Pbox-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.3em;
+}
+
+.Pcontainer .dot3-wrap .vue .Pbox-wrapper a {
+  width: 320px;
+  margin-right: 2em;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1.2em;
+  transition: all 1s;
+}
+
+.Pcontainer .dot3-wrap .vue .Pbox-wrapper a img {
+  width: 100%;
+}
+
+.Pcontainer .dot3-wrap .vue .Pbox-wrapper a .cover {
+  background: rgba(1, 1, 1, 0.4);
+  transition: all .8s;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translateY(450px);
+  font-family: "Nanum Gothic Coding", monospace;
+  font-size: 1em;
+  color: #eeeeee;
+  text-align: center;
+  padding-top: 28%;
+}
+
+.Pcontainer .dot3-wrap .vue .Pbox-wrapper a .cover div {
+  font-family: "Noto Sans KR", sans-serif;
+  padding-top: 1em;
+  font-size: 0.7em;
+}
+
+@media screen and (max-width: 1250px) {
+  .Pcontainer .dot3-wrap .vue .Pbox-wrapper a {
+    width: 400px;
   }
-  .Pcontainer .line .dot3 {
-    top: 120em;
+}
+
+.Pcontainer .dot3-wrap .vue .Pbox-wrapper a:hover .cover {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media screen and (max-width: 1430px) {
+  .Pcontainer .dot3-wrap {
+    top: 200%;
   }
-  .Pcontainer .line .dot3 .vue .Pbox-wrapper {
-    top: 1.2em;
-    flex-direction: column;
+}
+
+@media screen and (max-width: 1199px) {
+  .Pcontainer .dot3-wrap {
+    top: 340%;
   }
-  .Pcontainer .line .dot3 .vue .Pbox-wrapper a {
-    margin: 1em 0;
+}
+
+@media screen and (max-width: 680px) {
+  .Pcontainer .dot3-wrap {
+    display: none;
   }
 }
 
@@ -190,10 +317,4 @@ body {
   min-height: 100%;
   background-color: #1d1d1d;
   background: url(../img/p3-2.jpg) center center fixed;
-}
-
-@media screen and (max-width: 515px) {
-  body .line {
-    display: none;
-  }
 }

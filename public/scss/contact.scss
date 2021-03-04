@@ -21,6 +21,7 @@ body {
     background-color: #4bf1f1;
     margin-right: 0.1em;
   }
+  @include tablet { left: 120px; }
 }
 .con-wrapper {
   width: 100%; height: 100vh;

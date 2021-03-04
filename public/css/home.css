@@ -45,6 +45,7 @@ body {
 
 @media screen and (max-width: 1430px) {
   .img-wrapper .Htitle-wrapper .title-wrap {
+    transition: all .5s;
     width: 100%;
     font-size: 0.8em;
     margin-left: 15%;
@@ -131,26 +132,32 @@ body {
 .img-wrapper .Htitle-wrapper .p5 {
   font-size: 0.3em;
   position: absolute;
-  left: 50%;
+  left: 46%;
   bottom: -35%;
-  transform: translateX(-50%);
 }
 
 @media screen and (max-width: 767px) {
   .img-wrapper .Htitle-wrapper {
+    transition: all .5s;
     font-size: 2.5em;
   }
   .img-wrapper .Htitle-wrapper .title-wrap {
-    margin-left: 40%;
+    margin-left: 20%;
   }
   .img-wrapper .Htitle-wrapper .title .p2 {
     margin: 0.5em 0;
   }
   .img-wrapper .Htitle-wrapper .title .name {
-    margin-left: 35%;
+    margin-left: 20%;
   }
   .img-wrapper .Htitle-wrapper .p5 {
     bottom: -70%;
     font-size: 0.3em;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .img-wrapper .Htitle-wrapper {
+    display: none;
   }
 }

@@ -28,7 +28,7 @@ body {
 				font-family: $Notof;
 				padding-bottom: 0.5em;
 			}
-			@include desktopM1 { width: 100%; font-size: 0.8em; margin-left: 15%; }
+			@include desktopM1 {transition: all .5s; width: 100%; font-size: 0.8em; margin-left: 15%; }
 		}
 		.title {
 			margin: 0 auto; width: 100%;
@@ -73,17 +73,18 @@ body {
 		}
 		.p5 {
 			font-size: 0.3em;
-			position: absolute; left: 50%; bottom: -35%;
-			transform: translateX(-50%);
+			position: absolute; left: 46%; bottom: -35%;
 		}
 		@include tablet {
+			transition: all .5s;
 			font-size: 2.5em;
-			.title-wrap { margin-left: 40%; }
+			.title-wrap { margin-left: 20%; }
 			.title {
 				.p2 {margin: 0.5em 0;}
-				.name { margin-left: 35%; }
+				.name { margin-left: 20%; }
 			}
 			.p5 { bottom: -70%; font-size: 0.3em;}
 		}
+		@include mobileS {display: none;}
 	}
 }
