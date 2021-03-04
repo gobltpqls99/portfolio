@@ -89,7 +89,7 @@
 			.dot1 {
 				top: 8em;
 				.html {
-					.Pbox-wrapper{ top: 1.2em; flex-direction: column;
+					.Pbox-wrapper{ transition: all .5s; top: 1.2em; flex-direction: column;
 						a { margin: 1em 0; }
 					}				
 				}

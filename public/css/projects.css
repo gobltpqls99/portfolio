@@ -155,6 +155,7 @@
     top: 8em;
   }
   .Pcontainer .line .dot1 .html .Pbox-wrapper {
+    transition: all .5s;
     top: 1.2em;
     flex-direction: column;
   }

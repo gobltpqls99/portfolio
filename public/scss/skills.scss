@@ -170,7 +170,7 @@ body {
 			}
 			.tools { padding-left: 0; }
 		}
-		@include laptop { margin-top: 7em; margin-left: -15%;}
+		@include laptop { margin-top: 300px; margin-left: -20%; transition: all .5s;}
 		@include mobile { display: none; }
 	}
 }

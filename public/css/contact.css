@@ -39,7 +39,7 @@ body {
   color: #dedede;
   font-family: "Noto Sans KR", sans-serif;
   position: absolute;
-  top: 30%;
+  top: 250px;
   left: 15%;
   font-size: 1em;
 }
@@ -101,7 +101,7 @@ body {
 
 .con-wrapper .contact-container {
   position: absolute;
-  top: 60%;
+  top: 550px;
   right: 10%;
   color: #dedede;
   font-size: 1.45em;
