@@ -24,22 +24,22 @@
 
 .Pcontainer .line {
   width: 0.0125em;
-  height: 100em;
+  height: 170%;
   background-color: #4af1f1;
   position: absolute;
   left: 20%;
   top: 230px;
 }
 
-@media screen and (max-width: 1430px) {
+@media screen and (max-width: 1580px) {
   .Pcontainer .line {
-    height: 150em;
+    height: 240%;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .Pcontainer .line {
-    height: 240em;
+    height: 350%;
   }
 }
 
@@ -51,12 +51,12 @@
 
 .Pcontainer .dot1-wrap {
   display: block;
+  height: 100%;
+  margin-left: 19.75%;
+  padding-top: 15em;
   font-size: 1.5em;
   width: 80%;
   color: #eee;
-  position: absolute;
-  top: 35%;
-  left: 19.75%;
 }
 
 .Pcontainer .dot1-wrap .dot1 {
@@ -79,7 +79,7 @@
 }
 
 .Pcontainer .dot1-wrap .html .Pbox-wrapper a {
-  width: 320px;
+  width: 370px;
   margin-right: 2em;
   position: relative;
   overflow: hidden;
@@ -133,9 +133,10 @@
   font-size: 1.5em;
   width: 80%;
   color: #eee;
-  position: absolute;
-  top: 110%;
-  left: 19.75%;
+  height: 100%;
+  display: block;
+  margin-left: 19.75%;
+  padding-top: 5em;
 }
 
 .Pcontainer .dot2-wrap .dot2 {
@@ -158,7 +159,7 @@
 }
 
 .Pcontainer .dot2-wrap .node .Pbox-wrapper a {
-  width: 320px;
+  width: 370px;
   margin-right: 2em;
   position: relative;
   overflow: hidden;
@@ -202,18 +203,6 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 1430px) {
-  .Pcontainer .dot2-wrap {
-    top: 150%;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .Pcontainer .dot2-wrap {
-    top: 245%;
-  }
-}
-
 @media screen and (max-width: 680px) {
   .Pcontainer .dot2-wrap {
     display: none;
@@ -224,9 +213,10 @@
   font-size: 1.5em;
   width: 80%;
   color: #eee;
-  position: absolute;
-  top: 155%;
-  left: 19.75%;
+  display: block;
+  height: 100%;
+  margin-left: 19.75%;
+  padding-top: 5em;
 }
 
 .Pcontainer .dot3-wrap .dot3 {
@@ -249,7 +239,7 @@
 }
 
 .Pcontainer .dot3-wrap .vue .Pbox-wrapper a {
-  width: 320px;
+  width: 370px;
   margin-right: 2em;
   position: relative;
   overflow: hidden;
@@ -291,18 +281,6 @@
 .Pcontainer .dot3-wrap .vue .Pbox-wrapper a:hover .cover {
   transform: translateY(0);
   opacity: 1;
-}
-
-@media screen and (max-width: 1430px) {
-  .Pcontainer .dot3-wrap {
-    top: 200%;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .Pcontainer .dot3-wrap {
-    top: 340%;
-  }
 }
 
 @media screen and (max-width: 680px) {

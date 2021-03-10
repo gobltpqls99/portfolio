@@ -11,21 +11,20 @@
 	}
 	
 	.line {
-		width: 0.0125em; height: 100em; background-color: #4af1f1;
+		width: 0.0125em; height: 170%; background-color: #4af1f1;
 		position: absolute;  left: 20%; top: 230px;
-		@include desktopM1 { height: 150em; }
-		@include desktop { height: 240em; }
+		@include desktopM { height: 240%; }
+		@include desktop { height: 350%; }
 		@include tabletM { display: none; }
 	}
 	.dot1-wrap {
-		display: block;
-		font-size: 1.5em;	width: 80%; color: #eee;
-		position: absolute; top: 35%; left: 19.75%;
+		display: block; height: 100%; margin-left: 19.75%;
+		padding-top: 15em; font-size: 1.5em;	width: 80%; color: #eee;
 		.dot1 { width: 0.5em; height: 0.5em; border-radius: 50%; background-color: #4af1f1; }
 		.html {
 			width: 100%; font-family: $d2; margin-left: 2.5em;
 			.Pbox-wrapper { display: flex; flex-wrap: wrap; margin-top: 1.3em;
-				a {	width: 320px; margin-right: 2em; position: relative; overflow: hidden; margin-top: 1.2em;  transition: all 1s;
+				a {	width: 370px; margin-right: 2em; position: relative; overflow: hidden; margin-top: 1.2em;  transition: all 1s;
 					img { width: 100%; }
 					.cover {
 						background: rgba(1, 1, 1, 0.4);
@@ -44,12 +43,12 @@
 	}
 	.dot2-wrap {
 		font-size: 1.5em;	width: 80%; color: #eee;
-		position: absolute; top: 110%; left: 19.75%;
+		height: 100%; display: block; margin-left: 19.75%; padding-top: 5em;
 		.dot2 { width: 0.5em; height: 0.5em; border-radius: 50%; background-color: #4af1f1; }
 		.node {
 			width: 100%; font-family: $d2; margin-left: 2.5em;
 			.Pbox-wrapper { display: flex; flex-wrap: wrap; margin-top: 1.3em;
-				a {	width: 320px; margin-right: 2em; position: relative; overflow: hidden; margin-top: 1.2em;  transition: all 1s;
+				a {	width: 370px; margin-right: 2em; position: relative; overflow: hidden; margin-top: 1.2em;  transition: all 1s;
 					img { width: 100%; }
 					.cover {
 						background: rgba(1, 1, 1, 0.4);
@@ -64,18 +63,16 @@
 				} a:hover { .cover { transform: translateY(0); opacity: 1;} }
 			}
 		}
-		@include desktopM1 { top: 150%; }
-		@include desktop { top: 245%; }
 		@include tabletM { display: none; }
 	}
 	.dot3-wrap {
 		font-size: 1.5em;	width: 80%; color: #eee;
-		position: absolute; top: 155%; left: 19.75%;
+		display: block; height: 100%; margin-left: 19.75%; padding-top: 5em;
 		.dot3 { width: 0.5em; height: 0.5em; border-radius: 50%; background-color: #4af1f1; }
 		.vue {
 			width: 100%; font-family: $d2; margin-left: 2.5em;
 			.Pbox-wrapper { display: flex; flex-wrap: wrap; margin-top: 1.3em;
-				a {	width: 320px; margin-right: 2em; position: relative; overflow: hidden; margin-top: 1.2em;  transition: all 1s;
+				a {	width: 370px; margin-right: 2em; position: relative; overflow: hidden; margin-top: 1.2em;  transition: all 1s;
 					img { width: 100%; }
 					.cover {
 						background: rgba(1, 1, 1, 0.4);
@@ -90,8 +87,6 @@
 				} a:hover { .cover { transform: translateY(0); opacity: 1;} }
 			}
 		}
-		@include desktopM1 { top: 200%; }
-		@include desktop { top: 340%; }
 		@include tabletM { display: none; }
 	}
 }//Pcontainer

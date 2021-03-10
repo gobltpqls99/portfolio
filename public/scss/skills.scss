@@ -28,10 +28,11 @@ body {
 	position: absolute; left: 40%;
 	color: #dedede;
 	font-size: 1.5em;
-	.frameworks {
+	.frontend {
+		margin-left: 5em;
 		margin-top: 6em;
 		text-align: center;
-		width: 450px; height: 380px;
+		width: 330px; height: 300px;
 		background: rgba(255, 255, 255, 0.23);
 		border: 1px solid #dedede;
 		padding-top: 2em;
@@ -39,37 +40,34 @@ body {
 		.tape {
 			width: 30px; height: 70px;
 			background-color: rgba(255, 255, 255, 0.26);
-			position: absolute; top: -11%; left: 48%;
-			transform: translateX(-48%) rotate(9deg);
+			position: absolute; top: -13%; left: 48%;
+			transform:rotate(10deg);
 		}
 		.s-line {
-			width: 60px; height: 0.02em;
+			width: 57px; height: 0.02em;
 			opacity: .5;
 			background-color: #dedede;
-			position: absolute; top: 80%; left: -13.7%;
+			position: absolute; top: 240px; left: -57px;
 		}
-		.img-box {
-			img {
-				margin: 0.7em 1em;
-			}
-		}
-		.frontend {
+		.img-box { img {	margin: 0.7em 1em; } }
+		.publisher {
 			text-align: left;
-			width: 350px; height: 330px;
+			width: 450px; height: 400px;
 			background: rgba(255, 255, 255, 0.23);
 			border: 1px solid #dedede;
 			padding-top: 1em;
 			padding-left: 1em;
 			position: absolute;
-			left: -92%; top: 50%;
+			left: -506px; top: 40%;
 			.s-line {
-				position: absolute; width: 0.02em; height: 30px;
-				top: 329px; left: 330px;
+				position: absolute; width: 0.02em; height: 35px;
+				top: 400px; left: 195px;
 			}
 			.img-box {
-				padding-left: 0.8em;
+				padding-left: 0.9em;
 				padding-top: 0.7em;
 				div {
+					margin: 0.9em 0.5em;
 					width: 70px; height: 70px;
 					display: inline-block;
 					font-family: $Notos;
@@ -77,46 +75,67 @@ body {
 					text-align: center;
 					padding-top: 0.9em;
 				}
-				img {
-					margin: 0.5em 0.8em;
-				}
+				img { margin: 0.9em 0.5em; }
 			}
 		}
 		.backend {
 			text-align: center;
-			width: 250px; height: 230px;
+			width: 350px; height: 330px;
 			background: rgba(255, 255, 255, 0.23);
 			border: 1px solid #dedede;
-			padding-top: 1em;
+			padding-top: 2em;
 			position: absolute;
-			left: 110%; top: 20%;
+			left: 380px; top: 70px;
 			.s-line {
-				width: 45px; height: 0.02em;
+				width: 52px; height: 0.02em;
 				opacity: .5;
 				background-color: #dedede;
-				position: absolute; top: 50px; left: -45px;
+				position: absolute; top: 50px; left: -52px;
 			}
 			.img-box {
-				img {
-					margin: 0.5em 0.5em;
-				}
-				div {display: inline-block; font-family: $Notos; font-size: 0.8em;}
+				padding-top: 0.8em;
+				img { margin: 0.5em; }
+				div {display: inline-block; font-family: $Notos; font-size: 0.8em; margin: 0.5em;}
 			}		
 		}
-		.tools {
+		.etc {
 			text-align: left;
-			width: 250px; height: 200px;
+			width: 200px; height: 190px;
 			background: rgba(255, 255, 255, 0.23);
 			border: 1px solid #dedede;
 			padding-top: 1em;
 			padding-left: 1em;
 			position: absolute;
-			left: 85%; bottom: -69%;
+			left: 434px; bottom: -370px;
 			.s-line {
-				width: 0.02em; height: 60px;
+				width: 0.02em; height: 80px;
 				opacity: .5;
 				background-color: #dedede;
-				position: absolute; top: -30%; left: 7%;
+				position: absolute; top: -80px; left: 45px;
+			}
+			.img-box {
+				text-align: center;
+				padding-top: 0.8em;
+				margin-right: 1em;
+				img {
+					margin: 0.5em 0.5em;
+				}
+			}
+		}
+		.server {
+			text-align: left;
+			width: 250px; height: 190px;
+			background: rgba(255, 255, 255, 0.23);
+			border: 1px solid #dedede;
+			padding-top: 1em;
+			padding-left: 1em;
+			position: absolute;
+			left: 160px; bottom: -230px;
+			.s-line {
+				width: 70px; height: 0.02em;
+				opacity: .5;
+				background-color: #dedede;
+				position: absolute; top: 100px; left: 250px;
 			}
 			.img-box {
 				text-align: center;
@@ -129,32 +148,31 @@ body {
 		}
 		.design {
 			text-align: center;
-			width: 280px; height: 200px;
+			width: 300px; height: 180px;
 			background: rgba(255, 255, 255, 0.23);
 			border: 1px solid #dedede;
 			padding-top: 1em; position: absolute;
-			left: 7%; bottom: -65%;
+			left: -260px; bottom: -340px;
 			.s-line {
-				width: 112px; height: 0.02em;
+				width: 50px; height: 0.02em;
 				opacity: .5;
 				background-color: #dedede;
-				position: absolute; top: 123px; left: -112px;
+				position: absolute; top: 95px; left: -50px;
 			}
 			.img-box {
 				padding-top: 1em;
 				img {
-					margin: 0.5em 0.3em;
+					margin: 0 0.3em;
 				}
 			}
 		}
-		@include desktopL {
-			.s-line { display: none; }
-		}
+		@include desktopL { .s-line { display: none; } }
 		@include desktop {
-			.frameworks { .s-line { display: none; } }
-			.frontend, .backend, .tools, .design {
+			width: 450px;
+			.publisher, .backend, .etc, .server, .design {
 				position: static;
 				margin-top: 2em;
+				padding: 1em 0;
 				text-align: center;
 				width: 450px;
 				.img-box {
@@ -167,12 +185,12 @@ body {
 				padding-left: 0; height: 300px;
 				.img-box { img { width: 60px; margin: 0.5em;} }
 			}
-			.tools { padding-left: 0; }
+			.etc { padding-left: 0; }
 		}
 		@include laptop {
-			.frameworks {
+			.frontend {
 				width: 70%;
-				.frontend, .backend, .tools, .design { width: 70%; }
+				.publisher, .backend, .etc, .server, .design { width: 70%; }
 			}
 			margin-top: 300px; margin-left: -20%; transition: all .5s; margin-bottom: 5em;
 		}
