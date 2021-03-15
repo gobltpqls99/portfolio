@@ -45,9 +45,9 @@ body {
   color: #dedede;
   font-family: "Noto Sans KR", sans-serif;
   position: absolute;
-  top: 250px;
+  top: 270px;
   left: 15%;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .con-wrapper .text-wrapper .text-wrap .hello {
@@ -85,13 +85,6 @@ body {
   margin-top: 2em;
 }
 
-@media screen and (max-width: 1199px) {
-  .con-wrapper .text-wrapper .text-wrap .line-wrap .line {
-    left: -15%;
-    bottom: -150%;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .con-wrapper .text-wrapper {
     font-size: 0.9em;
@@ -110,7 +103,7 @@ body {
   top: 550px;
   right: 10%;
   color: #dedede;
-  font-size: 1.45em;
+  font-size: 1.6em;
   font-family: "Nanum Gothic Coding", monospace;
 }
 
@@ -129,10 +122,17 @@ body {
 .con-wrapper .contact-container .contact-wrapper h1 .h1-pen {
   position: absolute;
   top: 53%;
-  left: 11%;
+  left: 54px;
   width: 48%;
   height: 17px;
   background-color: #4bf1f14f;
+}
+
+@media screen and (max-width: 767px) {
+  .con-wrapper .contact-container .contact-wrapper h1 .h1-pen {
+    width: 40%;
+    left: 40px;
+  }
 }
 
 .con-wrapper .contact-container .p {

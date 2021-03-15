@@ -22,6 +22,10 @@ body {
 }
 
 .Sbox-wrapper {
+	img { overflow: hidden; width: 70px; height: 100%; transition: all 1s; }
+	img:hover { transform: scale(1.1); }
+	.text-img { overflow: hidden; transition: all 1s; cursor: pointer; }
+	.text-img:hover { transform: scale(1.1); }
 	font-family: $d2;
 	width: 100%; height: 100%;
 	margin-bottom: 2em;
@@ -55,8 +59,8 @@ body {
 			width: 450px; height: 400px;
 			background: rgba(255, 255, 255, 0.17);
 			border: 1px solid #dedede;
-			padding-top: 1em;
-			padding-left: 1em;
+			padding-top: 1.3em;
+			padding-left: 1.5em;
 			position: absolute;
 			left: -506px; top: 40%;
 			.s-line {
@@ -64,16 +68,11 @@ body {
 				top: 400px; left: 195px;
 			}
 			.img-box {
-				padding-left: 0.9em;
+				padding-left: 0.2em;
 				padding-top: 0.7em;
-				div {
-					margin: 0.9em 0.5em;
-					width: 70px; height: 70px;
-					display: inline-block;
-					font-family: $Notos;
-					font-size: 0.9em;
-					text-align: center;
-					padding-top: 0.9em;
+				.text-img {
+					width: 95px; display: inline-block; font-family: $Notos;
+					font-size: 0.9em; text-align: center;
 				}
 				img { margin: 0.9em 0.5em; }
 			}
@@ -93,9 +92,9 @@ body {
 				position: absolute; top: 50px; left: -52px;
 			}
 			.img-box {
-				padding-top: 0.8em;
+				padding-top: 0.5em;
 				img { margin: 0.5em; }
-				div {display: inline-block; font-family: $Notos; font-size: 0.8em; margin: 0.5em;}
+				.text-img {width: 95px; display: inline-block; font-weight: bold; font-family: $Notos; font-size: 0.7em;padding-top: 1em; }
 			}		
 		}
 		.etc {
@@ -151,16 +150,16 @@ body {
 			width: 300px; height: 180px;
 			background: rgba(255, 255, 255, 0.1);
 			border: 1px solid #dedede;
-			padding-top: 1em; position: absolute;
-			left: -260px; bottom: -340px;
+			padding-top: 0.7em; position: absolute;
+			left: -260px; bottom: -345px;
 			.s-line {
 				width: 50px; height: 0.02em;
 				opacity: .5;
 				background-color: #dedede;
-				position: absolute; top: 95px; left: -50px;
+				position: absolute; top: 90px; left: -50px;
 			}
 			.img-box {
-				padding-top: 1em;
+				padding-top: 1.5em;
 				img {
 					margin: 0 0.3em;
 				}
