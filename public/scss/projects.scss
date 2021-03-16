@@ -11,7 +11,7 @@
 	}
 	
 	.line {
-		width: 0.0125em; height: 2000px; background-color: #4af1f1;
+		width: 0.0125em; height: 1900px; background-color: #4af1f1;
 		position: absolute;  left: 20%; top: 230px;
 		@include desktopM { height: 2300px; }
 		@include desktop { height: 3300px; }
