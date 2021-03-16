@@ -92,9 +92,9 @@ body {
   }
 }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 615px) {
   .con-wrapper .text-wrapper {
-    display: none;
+    margin-left: 0;
   }
 }
 
@@ -153,8 +153,8 @@ body {
   }
 }
 
-@media screen and (max-width: 515px) {
+@media screen and (max-width: 615px) {
   .con-wrapper .contact-container {
-    display: none;
+    left: 70px;
   }
 }

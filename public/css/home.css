@@ -155,9 +155,3 @@ body {
     font-size: 0.3em;
   }
 }
-
-@media screen and (max-width: 515px) {
-  .img-wrapper .Htitle-wrapper {
-    display: none;
-  }
-}

@@ -66,6 +66,12 @@
   background-color: #4af1f1;
 }
 
+@media screen and (max-width: 615px) {
+  .Pcontainer .dot1-wrap .dot1 {
+    display: none;
+  }
+}
+
 .Pcontainer .dot1-wrap .html {
   width: 100%;
   font-family: "Nanum Gothic Coding", monospace;
@@ -123,9 +129,10 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 680px) {
-  .Pcontainer .dot1-wrap {
-    display: none;
+@media screen and (max-width: 615px) {
+  .Pcontainer .dot1-wrap .html {
+    margin: 0;
+    max-width: 100%;
   }
 }
 
@@ -144,6 +151,12 @@
   height: 0.5em;
   border-radius: 50%;
   background-color: #4af1f1;
+}
+
+@media screen and (max-width: 615px) {
+  .Pcontainer .dot2-wrap .dot2 {
+    display: none;
+  }
 }
 
 .Pcontainer .dot2-wrap .node {
@@ -203,13 +216,15 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 680px) {
-  .Pcontainer .dot2-wrap {
-    display: none;
+@media screen and (max-width: 615px) {
+  .Pcontainer .dot2-wrap .node {
+    margin: 0;
+    max-width: 100%;
   }
 }
 
 .Pcontainer .dot3-wrap {
+  margin-bottom: 2em;
   font-size: 1.5em;
   width: 80%;
   color: #eee;
@@ -224,6 +239,12 @@
   height: 0.5em;
   border-radius: 50%;
   background-color: #4af1f1;
+}
+
+@media screen and (max-width: 615px) {
+  .Pcontainer .dot3-wrap .dot3 {
+    display: none;
+  }
 }
 
 .Pcontainer .dot3-wrap .vue {
@@ -283,9 +304,10 @@
   opacity: 1;
 }
 
-@media screen and (max-width: 680px) {
-  .Pcontainer .dot3-wrap {
-    display: none;
+@media screen and (max-width: 615px) {
+  .Pcontainer .dot3-wrap .vue {
+    margin: 0;
+    max-width: 100%;
   }
 }
 

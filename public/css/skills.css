@@ -325,6 +325,12 @@ body {
 
 @media screen and (max-width: 615px) {
   .Sbox-wrapper .frontend {
-    display: none;
+    width: 300px;
+  }
+  .Sbox-wrapper .frontend .publisher, .Sbox-wrapper .frontend .backend, .Sbox-wrapper .frontend .etc, .Sbox-wrapper .frontend .server, .Sbox-wrapper .frontend .design {
+    width: 300px;
+  }
+  .Sbox-wrapper .frontend .publisher, .Sbox-wrapper .frontend .backend {
+    height: 500px;
   }
 }

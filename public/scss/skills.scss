@@ -193,6 +193,10 @@ body {
 			}
 			margin-top: 300px; margin-left: -20%; transition: all .5s; margin-bottom: 5em;
 		}
-		@include mobile { display: none; }
+		@include mobile {
+			width: 300px;
+			.publisher, .backend, .etc, .server, .design { width: 300px; } 
+			.publisher, .backend { height: 500px; } 
+		}
 	}
 }
