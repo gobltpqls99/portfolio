@@ -24,7 +24,7 @@
 
 .Pcontainer .line {
   width: 0.0125em;
-  height: 190%;
+  height: 2000px;
   background-color: #4af1f1;
   position: absolute;
   left: 20%;
@@ -33,13 +33,13 @@
 
 @media screen and (max-width: 1580px) {
   .Pcontainer .line {
-    height: 240%;
+    height: 2300px;
   }
 }
 
 @media screen and (max-width: 1199px) {
   .Pcontainer .line {
-    height: 350%;
+    height: 3300px;
   }
 }
 

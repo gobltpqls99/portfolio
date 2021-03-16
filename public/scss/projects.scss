@@ -11,10 +11,10 @@
 	}
 	
 	.line {
-		width: 0.0125em; height: 190%; background-color: #4af1f1;
+		width: 0.0125em; height: 2000px; background-color: #4af1f1;
 		position: absolute;  left: 20%; top: 230px;
-		@include desktopM { height: 240%; }
-		@include desktop { height: 350%; }
+		@include desktopM { height: 2300px; }
+		@include desktop { height: 3300px; }
 		@include tabletM { display: none; }
 	}
 	.dot1-wrap {

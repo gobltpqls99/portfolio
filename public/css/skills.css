@@ -55,7 +55,7 @@ body {
 .Sbox-wrapper .text-img {
   overflow: hidden;
   transition: all 1s;
-  cursor: pointer;
+  cursor: default;
 }
 
 .Sbox-wrapper .text-img:hover {
