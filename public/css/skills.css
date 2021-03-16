@@ -22,6 +22,12 @@
   }
 }
 
+@media screen and (max-width: 615px) {
+  .Stitle-wrapper {
+    left: 80px;
+  }
+}
+
 body {
   overflow-y: auto;
   min-width: 100%;

@@ -8,6 +8,7 @@
 		font-family: $Source;
 		.color { width: 0.5em; height: 0.1em; background-color: #4af1f1;	margin-right: 0.1em; }
 		@include tablet { left: 120px; }
+		@include mobile { left: 80px; }
 	}
 	
 	.line {

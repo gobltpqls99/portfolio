@@ -33,6 +33,12 @@ body {
   }
 }
 
+@media screen and (max-width: 615px) {
+  .Ctitle-wrapper {
+    left: 80px;
+  }
+}
+
 .con-wrapper {
   width: 100%;
   height: 100vh;
@@ -95,6 +101,7 @@ body {
 @media screen and (max-width: 615px) {
   .con-wrapper .text-wrapper {
     margin-left: 0;
+    font-size: 0.7em;
   }
 }
 
@@ -135,6 +142,14 @@ body {
   }
 }
 
+@media screen and (max-width: 615px) {
+  .con-wrapper .contact-container .contact-wrapper h1 .h1-pen {
+    width: 30%;
+    left: 27px;
+    height: 13px;
+  }
+}
+
 .con-wrapper .contact-container .p {
   width: 100%;
   padding: 0.5em 2em;
@@ -155,6 +170,8 @@ body {
 
 @media screen and (max-width: 615px) {
   .con-wrapper .contact-container {
-    left: 70px;
+    font-size: 0.9em;
+    left: 80px;
+    top: 55%;
   }
 }

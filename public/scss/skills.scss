@@ -13,6 +13,7 @@
 		margin-right: 0.1em;
 	}
 	@include tablet { left: 120px; }
+	@include mobile { left: 80px; }
 }
 body {
 	overflow-y: auto;

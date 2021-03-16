@@ -22,6 +22,12 @@
   }
 }
 
+@media screen and (max-width: 615px) {
+  .Pcontainer .Ptitle-wrapper {
+    left: 80px;
+  }
+}
+
 .Pcontainer .line {
   width: 0.0125em;
   height: 1900px;
