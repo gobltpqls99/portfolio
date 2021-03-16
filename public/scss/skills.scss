@@ -119,6 +119,7 @@ body {
 				img {
 					margin: 0.5em 0.5em;
 				}
+				@include mobile { margin: 0; }
 			}
 		}
 		.server {
@@ -143,6 +144,7 @@ body {
 				img {
 					margin: 0.5em 0.5em;
 				}
+				@include mobile { margin: 0; }
 			}
 		}
 		.design {

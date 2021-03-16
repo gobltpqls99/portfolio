@@ -208,6 +208,12 @@ body {
   margin: 0.5em 0.5em;
 }
 
+@media screen and (max-width: 615px) {
+  .Sbox-wrapper .frontend .etc .img-box {
+    margin: 0;
+  }
+}
+
 .Sbox-wrapper .frontend .server {
   text-align: left;
   width: 250px;
@@ -239,6 +245,12 @@ body {
 
 .Sbox-wrapper .frontend .server .img-box img {
   margin: 0.5em 0.5em;
+}
+
+@media screen and (max-width: 615px) {
+  .Sbox-wrapper .frontend .server .img-box {
+    margin: 0;
+  }
 }
 
 .Sbox-wrapper .frontend .design {
