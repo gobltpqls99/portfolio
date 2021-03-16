@@ -66,7 +66,7 @@
   background-color: #4af1f1;
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 680px) {
   .Pcontainer .dot1-wrap .dot1 {
     display: none;
   }
@@ -153,7 +153,7 @@
   background-color: #4af1f1;
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 680px) {
   .Pcontainer .dot2-wrap .dot2 {
     display: none;
   }
@@ -241,7 +241,7 @@
   background-color: #4af1f1;
 }
 
-@media screen and (max-width: 615px) {
+@media screen and (max-width: 680px) {
   .Pcontainer .dot3-wrap .dot3 {
     display: none;
   }

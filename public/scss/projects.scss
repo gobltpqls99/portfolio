@@ -20,7 +20,7 @@
 	.dot1-wrap {
 		display: block; height: 100%; margin-left: 19.75%;
 		padding-top: 15em; font-size: 1.5em;	width: 80%; color: #eee;
-		.dot1 { width: 0.5em; height: 0.5em; border-radius: 50%; background-color: #4af1f1; @include mobile { display: none; } }
+		.dot1 { width: 0.5em; height: 0.5em; border-radius: 50%; background-color: #4af1f1; @include tabletM { display: none; } }
 		.html {
 			width: 100%; font-family: $d2; margin-left: 2.5em;
 			.Pbox-wrapper { display: flex; flex-wrap: wrap; margin-top: 1.3em;
@@ -46,7 +46,7 @@
 	.dot2-wrap {
 		font-size: 1.5em;	width: 80%; color: #eee;
 		height: 100%; display: block; margin-left: 19.75%; padding-top: 5em;
-		.dot2 { width: 0.5em; height: 0.5em; border-radius: 50%; background-color: #4af1f1; @include mobile { display: none; } }
+		.dot2 { width: 0.5em; height: 0.5em; border-radius: 50%; background-color: #4af1f1; @include tabletM { display: none; } }
 		.node {
 			width: 100%; font-family: $d2; margin-left: 2.5em;
 			.Pbox-wrapper { display: flex; flex-wrap: wrap; margin-top: 1.3em;
@@ -73,7 +73,7 @@
 		margin-bottom: 2em;
 		font-size: 1.5em;	width: 80%; color: #eee;
 		display: block; height: 100%; margin-left: 19.75%; padding-top: 5em;
-		.dot3 { width: 0.5em; height: 0.5em; border-radius: 50%; background-color: #4af1f1; @include mobile { display: none; } }
+		.dot3 { width: 0.5em; height: 0.5em; border-radius: 50%; background-color: #4af1f1; @include tabletM { display: none; } }
 		.vue {
 			width: 100%; font-family: $d2; margin-left: 2.5em;
 			.Pbox-wrapper { display: flex; flex-wrap: wrap; margin-top: 1.3em;
