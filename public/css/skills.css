@@ -144,8 +144,8 @@ body {
 
 .Sbox-wrapper .frontend .backend {
   text-align: center;
-  width: 350px;
-  height: 330px;
+  width: 200px;
+  height: 200px;
   background: rgba(255, 255, 255, 0.19);
   border: 1px solid #dedede;
   padding-top: 2em;
@@ -196,11 +196,11 @@ body {
 
 .Sbox-wrapper .frontend .etc .s-line {
   width: 0.02em;
-  height: 80px;
+  height: 210px;
   opacity: .5;
   background-color: #dedede;
   position: absolute;
-  top: -80px;
+  top: -210px;
   left: 45px;
 }
 
