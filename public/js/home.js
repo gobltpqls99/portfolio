@@ -1,5 +1,5 @@
 let target = document.querySelector("#typing");
-let stringArr = ["웹 개발자", "프론트엔드 개발자", "웹 퍼블리셔"];
+let stringArr = ["웹 개발자", "웹 퍼블리셔", "UI & UX 디자이너"];
 let selectString = stringArr[Math.floor(Math.random() * stringArr.length)];
 let selectStringArr = selectString.split("");
 
@@ -13,7 +13,7 @@ setInterval(blink, 300);
 
 
 var typingInterval = null;
-var typing = ['프론트엔드 개발자', '웹 개발자', '백엔드 개발자', '웹 퍼블리셔'];
+var typing = ['웹 개발자', '웹 퍼블리셔', 'UI & UX 디자이너'];
 var typingIdx = 0;
 var $span = $('#typing')
 
